@@ -16,8 +16,7 @@ header {
           flex-direction: row;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
-          justify-content: space-around;
-  box-shadow: 0px 4px 5px #bdbdbd; }
+          justify-content: space-around; }
   header .logo {
     width: 50%; }
     header .logo img {
@@ -54,8 +53,7 @@ footer {
   bottom: 0;
   height: 100px;
   width: 100%;
-  left: 0;
-  box-shadow: 0px -4px 5px #bdbdbd; }
+  left: 0; }
   footer ul {
     list-style-type: none;
     display: -webkit-box;
