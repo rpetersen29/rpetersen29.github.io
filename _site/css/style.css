@@ -58,6 +58,8 @@ header {
           color: white;
           text-transform: uppercase;
           text-shadow: -2px 2px #3a2c4d; }
+        header .nav-header ul li a:hover {
+          color: #345ef2; }
 
 footer {
   position: fixed;
@@ -65,7 +67,7 @@ footer {
   height: 100px;
   width: 100%;
   left: 0;
-  background: #fcfcfc; }
+  background: rgba(252, 252, 252, 0.8); }
   footer ul {
     list-style-type: none;
     display: -webkit-box;
@@ -105,6 +107,13 @@ html, body {
   background: #fcfcfc;
   font-family: "Ubuntu", sans-serif;
   padding: 100px 0; }
+
+a {
+  text-decoration: none;
+  color: #2b33cb; }
+
+a:hover {
+  color: #345ef2; }
 
 .main-container {
   width: 80%;
