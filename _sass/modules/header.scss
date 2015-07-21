@@ -1,16 +1,28 @@
 header{
-	background: rgb(238, 238, 238);
+	background: rgb(40,40,40);
+	background: url(/images/header-bg.png) repeat left top fixed;
+	font-family: $vt323;
 	position: absolute;
 	top: 0;
-	height: 100px;
+	height: 150px;
 	width: 100%;
 	left: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.7);
 
 	.logo{
 		width: 50%;
+		a{	
+			float: left;
+			font-size: 80px;
+			line-height: 150px;
+			padding: 0 20px;
+			text-decoration: none;
+			color: rgb(255, 255, 255);
+			text-shadow: -2px 2px rgb(58, 44, 77);
+		}
 		img{
 			float: left;
 			height: 80px;
@@ -27,10 +39,11 @@ header{
 			flex-direction: row;
 			justify-content: space-around;
 			li{
-				font-size: 3em;
+				font-size: 48px;
+				line-height: 150px;
 				a{
 					text-decoration: none;
-					color: rgb(255, 216, 1);
+					color: white;
 					text-transform: uppercase;
 
 					text-shadow: -2px 2px rgb(58, 44, 77);

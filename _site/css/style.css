@@ -1,8 +1,10 @@
 header {
-  background: #eeeeee;
+  background: #282828;
+  background: url(/images/header-bg.png) repeat left top fixed;
+  font-family: "VT323";
   position: absolute;
   top: 0;
-  height: 100px;
+  height: 150px;
   width: 100%;
   left: 0;
   display: -webkit-box;
@@ -16,9 +18,18 @@ header {
           flex-direction: row;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
-          justify-content: space-around; }
+          justify-content: space-around;
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.7); }
   header .logo {
     width: 50%; }
+    header .logo a {
+      float: left;
+      font-size: 80px;
+      line-height: 150px;
+      padding: 0 20px;
+      text-decoration: none;
+      color: white;
+      text-shadow: -2px 2px #3a2c4d; }
     header .logo img {
       float: left;
       height: 80px;
@@ -40,20 +51,21 @@ header {
           -ms-flex-pack: distribute;
               justify-content: space-around; }
       header .nav-header ul li {
-        font-size: 3em; }
+        font-size: 48px;
+        line-height: 150px; }
         header .nav-header ul li a {
           text-decoration: none;
-          color: #ffd801;
+          color: white;
           text-transform: uppercase;
           text-shadow: -2px 2px #3a2c4d; }
 
 footer {
-  background: #eeeeee;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 100px;
   width: 100%;
-  left: 0; }
+  left: 0;
+  background: #fcfcfc; }
   footer ul {
     list-style-type: none;
     display: -webkit-box;
@@ -75,10 +87,24 @@ footer {
         color: #ffd801;
         text-transform: uppercase;
         text-shadow: -2px 2px #3a2c4d; }
+    footer ul .github-logo {
+      width: 75px;
+      height: 75px;
+      display: block;
+      background: transparent url(/images/github-logo.png) center top no-repeat; }
+    footer ul .github-logo:hover {
+      width: 75px;
+      height: 75px;
+      background-image: url(/images/github-logo-hover.png); }
+
+* {
+  margin: 0;
+  padding: 0; }
 
 html, body {
-  font-family: "VT323";
-  padding: 50px 0; }
+  background: #fcfcfc;
+  font-family: "Ubuntu", sans-serif;
+  padding: 100px 0; }
 
 .main-container {
   width: 80%;

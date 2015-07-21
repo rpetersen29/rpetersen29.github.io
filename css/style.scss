@@ -1,12 +1,19 @@
 ---
 ---
 
+@import "modules/variables";
 @import "modules/header";
 @import "modules/footer";
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 html, body{
-	font-family: 'VT323', ;
-	padding: 50px 0;
+	background: rgb(252, 252, 252);
+	font-family: $ubuntu;
+	padding: 100px 0;
 }
 .main-container{
 	width: 80%;

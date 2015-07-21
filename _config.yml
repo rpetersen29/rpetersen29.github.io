@@ -1,3 +1,5 @@
+# bundle exec jekyll serve -w
+
 # Where things are
 source:      .
 destination: ./_site

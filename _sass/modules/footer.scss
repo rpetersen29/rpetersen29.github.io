@@ -1,10 +1,10 @@
 footer{
-	background: rgb(238, 238, 238);
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	height: 100px;
 	width: 100%;
 	left: 0;
+	background: rgb(252, 252, 252);
 
 	ul{
 		list-style-type: none;
@@ -20,6 +20,18 @@ footer{
 
 				text-shadow: -2px 2px rgb(58, 44, 77);
 			}
+		}
+
+		.github-logo{
+			width:75px;
+			height:75px;
+			display:block;
+ 			background: transparent url(/images/github-logo.png) center top no-repeat;
+		}
+		.github-logo:hover{
+			width:75px;
+			height:75px;
+			background-image: url(/images/github-logo-hover.png);
 		}
 	}
 }
