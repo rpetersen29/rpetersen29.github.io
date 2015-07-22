@@ -15,13 +15,18 @@ header{
 	.logo{
 		width: 50%;
 		a{	
-			float: left;
+			position: absolute;
+			top: 25%;
+			left: 0%;
 			font-size: 80px;
-			line-height: 150px;
+			line-height: 55px;
 			padding: 0 20px;
 			text-decoration: none;
 			color: rgb(255, 255, 255);
 			text-shadow: -2px 2px $dark-purple;
+			@media #{$mobile} {
+		      top: 15%;
+		    }
 		}
 		img{
 			float: left;

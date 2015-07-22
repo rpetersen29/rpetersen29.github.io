@@ -1,0 +1,4 @@
+$breakpoint-desktop: 768px;
+$breakpoint-short-screen: 600px;
+$mobile: 'only screen and (max-width: #{$breakpoint-desktop})';
+$short-screen: 'only screen and (max-height: #{$breakpoint-desktop})';

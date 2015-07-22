@@ -23,13 +23,18 @@ header {
   header .logo {
     width: 50%; }
     header .logo a {
-      float: left;
+      position: absolute;
+      top: 25%;
+      left: 0%;
       font-size: 80px;
-      line-height: 150px;
+      line-height: 55px;
       padding: 0 20px;
       text-decoration: none;
       color: white;
       text-shadow: -2px 2px #3a2c4d; }
+      @media only screen and (max-width: 768px) {
+        header .logo a {
+          top: 15%; } }
     header .logo img {
       float: left;
       height: 80px;
@@ -93,6 +98,7 @@ footer {
       width: 75px;
       height: 75px;
       display: block;
+      margin: auto;
       background: transparent url(/images/github-logo.png) center top no-repeat; }
     footer ul .github-logo:hover {
       width: 75px;
