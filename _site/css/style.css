@@ -59,7 +59,7 @@ header {
           text-transform: uppercase;
           text-shadow: -2px 2px #3a2c4d; }
         header .nav-header ul li a:hover {
-          color: #4a68f8; }
+          color: #4af8da; }
 
 footer {
   position: fixed;
@@ -110,10 +110,10 @@ html, body {
 
 a {
   text-decoration: none;
-  color: #2b33cb; }
+  color: #4a68f8; }
 
 a:hover {
-  color: #4a68f8; }
+  color: #4af8da; }
 
 .main-container {
   width: 80%;
