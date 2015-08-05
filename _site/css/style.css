@@ -20,21 +20,20 @@ header {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.7); }
+  @media only screen and (max-width: 768px) {
+    header {
+      height: 100px; } }
   header .logo {
-    width: 50%; }
+    text-align: center;
+    padding: 25px; }
     header .logo a {
-      position: absolute;
-      top: 25%;
-      left: 0%;
       font-size: 80px;
-      line-height: 55px;
-      padding: 0 20px;
       text-decoration: none;
       color: white;
       text-shadow: -2px 2px #3a2c4d; }
       @media only screen and (max-width: 768px) {
         header .logo a {
-          top: 15%; } }
+          font-size: 50px; } }
     header .logo img {
       float: left;
       height: 80px;
@@ -113,6 +112,13 @@ html, body {
   background: #fcfcfc;
   font-family: "Ubuntu", sans-serif;
   padding: 100px 0; }
+  @media only screen and (max-width: 768px) {
+    html, body {
+      padding: 60px 0; } }
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: x-large; } }
 
 a {
   text-decoration: none;
@@ -122,5 +128,8 @@ a:hover {
   color: #4af8da; }
 
 .main-container {
-  width: 80%;
+  width: 50%;
   margin: 0 auto; }
+  @media only screen and (max-width: 768px) {
+    .main-container {
+      width: 80%; } }

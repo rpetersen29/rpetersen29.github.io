@@ -15,6 +15,15 @@ html, body{
 	background: rgb(252, 252, 252);
 	font-family: $ubuntu;
 	padding: 100px 0;
+	@media #{$mobile} {
+      padding: 60px 0;
+    }
+}
+
+h1{
+	@media #{$mobile} {
+	    font-size: x-large;
+	}
 }
 
 a{
@@ -26,6 +35,9 @@ a:hover{
 }
 
 .main-container{
-	width: 80%;
+	width: 50%;
 	margin: 0 auto;
+	@media #{$mobile} {
+      width: 80%;
+    }
 }
