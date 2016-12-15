@@ -135,6 +135,3 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   octopress-autoprefixer
-
-BUNDLED WITH
-   1.10.3

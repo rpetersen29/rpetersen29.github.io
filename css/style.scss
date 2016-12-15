@@ -5,6 +5,7 @@
 @import "modules/media_queries";
 @import "modules/header";
 @import "modules/footer";
+@import "modules/roadblasters";
 
 *{
   margin: 0;
@@ -12,12 +13,14 @@
 }
 
 html, body{
-	background: rgb(252, 252, 252);
-	font-family: $ubuntu;
-	padding: 100px 0;
-	@media #{$mobile} {
-      padding: 60px 0;
-    }
+	background: rgb(200, 215, 255);
+	font-family: $default-font;
+}
+
+.roadblasters{
+	position: absolute;
+	bottom: 0;
+    left: 0;
 }
 
 h1{
@@ -26,18 +29,35 @@ h1{
 	}
 }
 
+h1, p {
+	color: white;
+    text-shadow: -2px 2px #3a2c4d;
+}
+
 a{
 	text-decoration:none;
+	text-shadow: none;
 	color: $light-blue;
 }
 a:hover{
 	color: $mint-green;
 }
+.overlay{
+    position: absolute;
+    top: 0;
+    background-color: rgba(255,255,255,0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 99998;
+}
 
 .main-container{
 	width: 50%;
 	margin: 0 auto;
+	position: relative;
+	z-index: 99999;
 	@media #{$mobile} {
+		padding-top: 100px;
       width: 80%;
     }
 }

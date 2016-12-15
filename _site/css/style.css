@@ -1,43 +1,37 @@
 header {
-  background: #282828;
-  background: url(/images/header-bg.png) repeat left top fixed;
   font-family: "VT323";
-  position: absolute;
-  top: 0;
-  height: 150px;
+  height: 200px;
   width: 100%;
-  left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.7); }
+  z-index: 99999;
+  position: relative; }
   @media only screen and (max-width: 768px) {
     header {
       height: 100px; } }
   header .logo {
     text-align: center;
     padding: 25px; }
-    header .logo a {
+    header .logo span {
       font-size: 80px;
       text-decoration: none;
       color: white;
       text-shadow: -2px 2px #3a2c4d; }
       @media only screen and (max-width: 768px) {
-        header .logo a {
+        header .logo span {
           font-size: 50px; } }
     header .logo img {
       float: left;
       height: 80px;
       padding: 10px 20px; }
+  header .github-logo {
+    width: 75px;
+    height: 75px;
+    display: block;
+    margin: auto;
+    background: transparent url(/images/github-logo.png) center top no-repeat; }
+  header .github-logo:hover {
+    width: 75px;
+    height: 75px;
+    background-image: url(/images/github-logo-hover.png); }
   header .nav-header {
     width: 50%; }
     header .nav-header ul {
@@ -93,43 +87,4675 @@ footer {
         color: #ffd801;
         text-transform: uppercase;
         text-shadow: -2px 2px #3a2c4d; }
-    footer ul .github-logo {
-      width: 75px;
-      height: 75px;
-      display: block;
-      margin: auto;
-      background: transparent url(/images/github-logo.png) center top no-repeat; }
-    footer ul .github-logo:hover {
-      width: 75px;
-      height: 75px;
-      background-image: url(/images/github-logo-hover.png); }
+
+.car {
+  bottom: 96px;
+  left: 46%;
+  display: block;
+  height: 3px;
+  width: 3px;
+  box-shadow: 0 0 transparent, 3px 3px transparent, 6px 3px transparent, 9px 3px transparent, 12px 3px transparent, 15px 3px transparent, 18px 3px #dd2a00, 21px 3px #3fbfff, 24px 3px #dd2a00, 27px 3px #dd2a00, 30px 3px #3fbfff, 33px 3px #3fbfff, 36px 3px #dd2a00, 39px 3px #dd2a00, 42px 3px #dd2a00, 45px 3px #dd2a00, 48px 3px #dd2a00, 51px 3px #dd2a00, 54px 3px #dd2a00, 57px 3px #dd2a00, 60px 3px #dd2a00, 63px 3px #3fbfff, 66px 3px #3fbfff, 69px 3px #dd2a00, 72px 3px #dd2a00, 75px 3px #3fbfff, 78px 3px #dd2a00, 81px 3px transparent, 84px 3px transparent, 87px 3px transparent, 90px 3px transparent, 93px 3px transparent, 3px 6px transparent, 6px 6px transparent, 9px 6px transparent, 12px 6px transparent, 15px 6px #dd2a00, 18px 6px #3fbfff, 21px 6px #3fbfff, 24px 6px #3fbfff, 27px 6px #dd2a00, 30px 6px #dd2a00, 33px 6px #dd2a00, 36px 6px #dd2a00, 39px 6px #dd2a00, 42px 6px #dd2a00, 45px 6px #dd2a00, 48px 6px #dd2a00, 51px 6px #dd2a00, 54px 6px #dd2a00, 57px 6px #dd2a00, 60px 6px #dd2a00, 63px 6px #dd2a00, 66px 6px #dd2a00, 69px 6px #dd2a00, 72px 6px #3fbfff, 75px 6px #3fbfff, 78px 6px #3fbfff, 81px 6px #dd2a00, 84px 6px transparent, 87px 6px transparent, 90px 6px transparent, 93px 6px transparent, 3px 9px transparent, 6px 9px transparent, 9px 9px transparent, 12px 9px transparent, 15px 9px #dd2a00, 18px 9px #dd2a00, 21px 9px #dd2a00, 24px 9px #dd2a00, 27px 9px #3fbfff, 30px 9px #3fbfff, 33px 9px #3fbfff, 36px 9px #3fbfff, 39px 9px #3fbfff, 42px 9px #3fbfff, 45px 9px #3fbfff, 48px 9px #3fbfff, 51px 9px #3fbfff, 54px 9px #3fbfff, 57px 9px #3fbfff, 60px 9px #3fbfff, 63px 9px #3fbfff, 66px 9px #3fbfff, 69px 9px #dd2a00, 72px 9px #dd2a00, 75px 9px #dd2a00, 78px 9px #dd2a00, 81px 9px #dd2a00, 84px 9px transparent, 87px 9px transparent, 90px 9px transparent, 93px 9px transparent, 3px 12px transparent, 6px 12px transparent, 9px 12px transparent, 12px 12px transparent, 15px 12px #dd2a00, 18px 12px #dd2a00, 21px 12px #dd2a00, 24px 12px #000, 27px 12px #000, 30px 12px #000, 33px 12px #000, 36px 12px #000, 39px 12px #000, 42px 12px #000, 45px 12px #3fbfff, 48px 12px #3fbfff, 51px 12px #3fbfff, 54px 12px #000, 57px 12px #000, 60px 12px #000, 63px 12px #000, 66px 12px #000, 69px 12px #000, 72px 12px #000, 75px 12px #dd2a00, 78px 12px #dd2a00, 81px 12px #dd2a00, 84px 12px transparent, 87px 12px transparent, 90px 12px transparent, 93px 12px transparent, 3px 15px transparent, 6px 15px transparent, 9px 15px transparent, 12px 15px transparent, 15px 15px #dd2a00, 18px 15px #000, 21px 15px #000, 24px 15px #dd2a00, 27px 15px #3fbfff, 30px 15px #3fbfff, 33px 15px #3fbfff, 36px 15px #3fbfff, 39px 15px #3fbfff, 42px 15px #3fbfff, 45px 15px #3fbfff, 48px 15px #3fbfff, 51px 15px #3fbfff, 54px 15px #3fbfff, 57px 15px #3fbfff, 60px 15px #3fbfff, 63px 15px #3fbfff, 66px 15px #3fbfff, 69px 15px #3fbfff, 72px 15px #dd2a00, 75px 15px #000, 78px 15px #000, 81px 15px #dd2a00, 84px 15px transparent, 87px 15px transparent, 90px 15px transparent, 93px 15px transparent, 3px 18px transparent, 6px 18px transparent, 9px 18px transparent, 12px 18px transparent, 15px 18px #dd2a00, 18px 18px #3fbfff, 21px 18px #3fbfff, 24px 18px #dd2a00, 27px 18px #3fbfff, 30px 18px #3fbfff, 33px 18px #3fbfff, 36px 18px #3fbfff, 39px 18px #3fbfff, 42px 18px #3fbfff, 45px 18px #3fbfff, 48px 18px #3fbfff, 51px 18px #3fbfff, 54px 18px #3fbfff, 57px 18px #3fbfff, 60px 18px #3fbfff, 63px 18px #3fbfff, 66px 18px #3fbfff, 69px 18px #3fbfff, 72px 18px #dd2a00, 75px 18px #3fbfff, 78px 18px #3fbfff, 81px 18px #dd2a00, 84px 18px transparent, 87px 18px transparent, 90px 18px transparent, 93px 18px transparent, 3px 21px transparent, 6px 21px transparent, 9px 21px transparent, 12px 21px transparent, 15px 21px #dd2a00, 18px 21px #3fbfff, 21px 21px #dd2a00, 24px 21px #dd2a00, 27px 21px #dd2a00, 30px 21px #dd2a00, 33px 21px #dd2a00, 36px 21px #dd2a00, 39px 21px #dd2a00, 42px 21px #dd2a00, 45px 21px #dd2a00, 48px 21px #dd2a00, 51px 21px #dd2a00, 54px 21px #dd2a00, 57px 21px #dd2a00, 60px 21px #dd2a00, 63px 21px #dd2a00, 66px 21px #dd2a00, 69px 21px #dd2a00, 72px 21px #dd2a00, 75px 21px #dd2a00, 78px 21px #3fbfff, 81px 21px #dd2a00, 84px 21px transparent, 87px 21px transparent, 90px 21px transparent, 93px 21px transparent, 3px 24px transparent, 6px 24px transparent, 9px 24px transparent, 12px 24px transparent, 15px 24px #dd2a00, 18px 24px #3fbfff, 21px 24px #dd2a00, 24px 24px #dd2a00, 27px 24px #dd2a00, 30px 24px #dd2a00, 33px 24px #dd2a00, 36px 24px #dd2a00, 39px 24px #dd2a00, 42px 24px #dd2a00, 45px 24px #dd2a00, 48px 24px #dd2a00, 51px 24px #dd2a00, 54px 24px #dd2a00, 57px 24px #dd2a00, 60px 24px #dd2a00, 63px 24px #dd2a00, 66px 24px #dd2a00, 69px 24px #dd2a00, 72px 24px #dd2a00, 75px 24px #dd2a00, 78px 24px #3fbfff, 81px 24px #dd2a00, 84px 24px transparent, 87px 24px transparent, 90px 24px transparent, 93px 24px transparent, 3px 27px transparent, 6px 27px transparent, 9px 27px transparent, 12px 27px #dd2a00, 15px 27px #dd2a00, 18px 27px #dd2a00, 21px 27px #dd2a00, 24px 27px #dd2a00, 27px 27px #dd2a00, 30px 27px #dd2a00, 33px 27px #dd2a00, 36px 27px #dd2a00, 39px 27px #dd2a00, 42px 27px #dd2a00, 45px 27px #dd2a00, 48px 27px #dd2a00, 51px 27px #dd2a00, 54px 27px #dd2a00, 57px 27px #dd2a00, 60px 27px #dd2a00, 63px 27px #dd2a00, 66px 27px #dd2a00, 69px 27px #dd2a00, 72px 27px #dd2a00, 75px 27px #dd2a00, 78px 27px #dd2a00, 81px 27px #dd2a00, 84px 27px #dd2a00, 87px 27px transparent, 90px 27px transparent, 93px 27px transparent, 3px 30px transparent, 6px 30px transparent, 9px 30px transparent, 12px 30px #dd2a00, 15px 30px #dd2a00, 18px 30px #3fbfff, 21px 30px #dd2a00, 24px 30px #dd2a00, 27px 30px #000, 30px 30px #000, 33px 30px #000, 36px 30px #000, 39px 30px #000, 42px 30px #000, 45px 30px #000, 48px 30px #000, 51px 30px #000, 54px 30px #000, 57px 30px #000, 60px 30px #000, 63px 30px #000, 66px 30px #000, 69px 30px #000, 72px 30px #dd2a00, 75px 30px #dd2a00, 78px 30px #3fbfff, 81px 30px #dd2a00, 84px 30px #dd2a00, 87px 30px transparent, 90px 30px transparent, 93px 30px transparent, 3px 33px transparent, 6px 33px transparent, 9px 33px transparent, 12px 33px #dd2a00, 15px 33px #3fbfff, 18px 33px #3fbfff, 21px 33px #dd2a00, 24px 33px #000, 27px 33px #000, 30px 33px #000, 33px 33px #000, 36px 33px #000, 39px 33px #000, 42px 33px #3fbfff, 45px 33px #3fbfff, 48px 33px #3fbfff, 51px 33px #3fbfff, 54px 33px #3fbfff, 57px 33px #000, 60px 33px #000, 63px 33px #000, 66px 33px #000, 69px 33px #000, 72px 33px #000, 75px 33px #dd2a00, 78px 33px #3fbfff, 81px 33px #3fbfff, 84px 33px #dd2a00, 87px 33px transparent, 90px 33px transparent, 93px 33px transparent, 3px 36px transparent, 6px 36px transparent, 9px 36px transparent, 12px 36px #dd2a00, 15px 36px #3fbfff, 18px 36px #3fbfff, 21px 36px #dd2a00, 24px 36px #000, 27px 36px #3fbfff, 30px 36px #3fbfff, 33px 36px #3fbfff, 36px 36px #3fbfff, 39px 36px #000, 42px 36px #3fbfff, 45px 36px #3fbfff, 48px 36px #000, 51px 36px #3fbfff, 54px 36px #3fbfff, 57px 36px #000, 60px 36px #3fbfff, 63px 36px #3fbfff, 66px 36px #3fbfff, 69px 36px #3fbfff, 72px 36px #000, 75px 36px #dd2a00, 78px 36px #3fbfff, 81px 36px #3fbfff, 84px 36px #dd2a00, 87px 36px transparent, 90px 36px transparent, 93px 36px transparent, 3px 39px transparent, 6px 39px transparent, 9px 39px transparent, 12px 39px #dd2a00, 15px 39px #3fbfff, 18px 39px #3fbfff, 21px 39px #dd2a00, 24px 39px #000, 27px 39px #000, 30px 39px #000, 33px 39px #000, 36px 39px #000, 39px 39px #000, 42px 39px #000, 45px 39px #3fbfff, 48px 39px #3fbfff, 51px 39px #3fbfff, 54px 39px #000, 57px 39px #000, 60px 39px #000, 63px 39px #000, 66px 39px #000, 69px 39px #000, 72px 39px #000, 75px 39px #dd2a00, 78px 39px #3fbfff, 81px 39px #3fbfff, 84px 39px #dd2a00, 87px 39px transparent, 90px 39px transparent, 93px 39px transparent, 3px 42px transparent, 6px 42px transparent, 9px 42px transparent, 12px 42px #dd2a00, 15px 42px #3fbfff, 18px 42px #dd2a00, 21px 42px #dd2a00, 24px 42px #000, 27px 42px #3fbfff, 30px 42px #3fbfff, 33px 42px #3fbfff, 36px 42px #3fbfff, 39px 42px #000, 42px 42px #3fbfff, 45px 42px #000, 48px 42px #000, 51px 42px #000, 54px 42px #3fbfff, 57px 42px #000, 60px 42px #3fbfff, 63px 42px #3fbfff, 66px 42px #3fbfff, 69px 42px #3fbfff, 72px 42px #000, 75px 42px #dd2a00, 78px 42px #dd2a00, 81px 42px #3fbfff, 84px 42px #dd2a00, 87px 42px transparent, 90px 42px transparent, 93px 42px transparent, 3px 45px transparent, 6px 45px transparent, 9px 45px transparent, 12px 45px #dd2a00, 15px 45px #3fbfff, 18px 45px #dd2a00, 21px 45px #000, 24px 45px #3fbfff, 27px 45px #3fbfff, 30px 45px #3fbfff, 33px 45px #3fbfff, 36px 45px #3fbfff, 39px 45px #3fbfff, 42px 45px #000, 45px 45px #3fbfff, 48px 45px #3fbfff, 51px 45px #3fbfff, 54px 45px #000, 57px 45px #3fbfff, 60px 45px #3fbfff, 63px 45px #3fbfff, 66px 45px #3fbfff, 69px 45px #3fbfff, 72px 45px #3fbfff, 75px 45px #000, 78px 45px #dd2a00, 81px 45px #3fbfff, 84px 45px #dd2a00, 87px 45px transparent, 90px 45px transparent, 93px 45px transparent, 3px 48px transparent, 6px 48px transparent, 9px 48px #dd2a00, 12px 48px #dd2a00, 15px 48px #3fbfff, 18px 48px #dd2a00, 21px 48px #000, 24px 48px #3fbfff, 27px 48px #3fbfff, 30px 48px #3fbfff, 33px 48px #3fbfff, 36px 48px #3fbfff, 39px 48px #3fbfff, 42px 48px #3fbfff, 45px 48px #000, 48px 48px #000, 51px 48px #000, 54px 48px #3fbfff, 57px 48px #3fbfff, 60px 48px #3fbfff, 63px 48px #3fbfff, 66px 48px #3fbfff, 69px 48px #3fbfff, 72px 48px #3fbfff, 75px 48px #000, 78px 48px #dd2a00, 81px 48px #3fbfff, 84px 48px #dd2a00, 87px 48px #dd2a00, 90px 48px transparent, 93px 48px transparent, 3px 51px transparent, 6px 51px transparent, 9px 51px #3fbfff, 12px 51px #3fbfff, 15px 51px #3fbfff, 18px 51px #3fbfff, 21px 51px #000, 24px 51px #000, 27px 51px #000, 30px 51px #000, 33px 51px #000, 36px 51px #000, 39px 51px #000, 42px 51px #000, 45px 51px #000, 48px 51px #000, 51px 51px #000, 54px 51px #000, 57px 51px #000, 60px 51px #000, 63px 51px #000, 66px 51px #000, 69px 51px #000, 72px 51px #000, 75px 51px #000, 78px 51px #dd2a00, 81px 51px #3fbfff, 84px 51px #dd2a00, 87px 51px #dd2a00, 90px 51px transparent, 93px 51px transparent, 3px 54px transparent, 6px 54px transparent, 9px 54px #dd2a00, 12px 54px #dd2a00, 15px 54px #000, 18px 54px #000, 21px 54px #dd2a00, 24px 54px #dd2a00, 27px 54px #dd2a00, 30px 54px #dd2a00, 33px 54px #dd2a00, 36px 54px #dd2a00, 39px 54px #dd2a00, 42px 54px #dd2a00, 45px 54px #dd2a00, 48px 54px #dd2a00, 51px 54px #dd2a00, 54px 54px #dd2a00, 57px 54px #dd2a00, 60px 54px #dd2a00, 63px 54px #dd2a00, 66px 54px #dd2a00, 69px 54px #dd2a00, 72px 54px #dd2a00, 75px 54px #dd2a00, 78px 54px #000, 81px 54px #000, 84px 54px #dd2a00, 87px 54px #dd2a00, 90px 54px transparent, 93px 54px transparent, 3px 57px transparent, 6px 57px transparent, 9px 57px #dd2a00, 12px 57px #dd2a00, 15px 57px #dd2a00, 18px 57px #dd2a00, 21px 57px #dd2a00, 24px 57px #dd2a00, 27px 57px #dd2a00, 30px 57px #dd2a00, 33px 57px #dd2a00, 36px 57px #dd2a00, 39px 57px #dd2a00, 42px 57px #dd2a00, 45px 57px #dd2a00, 48px 57px #dd2a00, 51px 57px #dd2a00, 54px 57px #dd2a00, 57px 57px #dd2a00, 60px 57px #dd2a00, 63px 57px #dd2a00, 66px 57px #dd2a00, 69px 57px #dd2a00, 72px 57px #dd2a00, 75px 57px #dd2a00, 78px 57px #dd2a00, 81px 57px #dd2a00, 84px 57px #dd2a00, 87px 57px #dd2a00, 90px 57px transparent, 93px 57px transparent, 3px 60px transparent, 6px 60px transparent, 9px 60px #dd2a00, 12px 60px #000, 15px 60px #000, 18px 60px #000, 21px 60px #000, 24px 60px #000, 27px 60px #000, 30px 60px #000, 33px 60px #000, 36px 60px #000, 39px 60px #000, 42px 60px #000, 45px 60px #000, 48px 60px #000, 51px 60px #000, 54px 60px #000, 57px 60px #000, 60px 60px #000, 63px 60px #000, 66px 60px #000, 69px 60px #000, 72px 60px #000, 75px 60px #000, 78px 60px #000, 81px 60px #000, 84px 60px #000, 87px 60px #dd2a00, 90px 60px transparent, 93px 60px transparent, 3px 63px transparent, 6px 63px transparent, 9px 63px #000, 12px 63px #000, 15px 63px #dd2a00, 18px 63px #dd2a00, 21px 63px #dd2a00, 24px 63px #3fbfff, 27px 63px #000, 30px 63px #000, 33px 63px #dd2a00, 36px 63px #dd2a00, 39px 63px #dd2a00, 42px 63px #dd2a00, 45px 63px #dd2a00, 48px 63px #dd2a00, 51px 63px #dd2a00, 54px 63px #dd2a00, 57px 63px #dd2a00, 60px 63px #dd2a00, 63px 63px #dd2a00, 66px 63px #000, 69px 63px #000, 72px 63px #3fbfff, 75px 63px #dd2a00, 78px 63px #dd2a00, 81px 63px #dd2a00, 84px 63px #000, 87px 63px #000, 90px 63px transparent, 93px 63px transparent, 3px 66px transparent, 6px 66px #000, 9px 66px #000, 12px 66px #dd2a00, 15px 66px #dd2a00, 18px 66px #dd2a00, 21px 66px #dd2a00, 24px 66px #3fbfff, 27px 66px #000, 30px 66px #000, 33px 66px #dd2a00, 36px 66px #3fbfff, 39px 66px #3fbfff, 42px 66px #3fbfff, 45px 66px #3fbfff, 48px 66px #3fbfff, 51px 66px #3fbfff, 54px 66px #3fbfff, 57px 66px #3fbfff, 60px 66px #3fbfff, 63px 66px #dd2a00, 66px 66px #000, 69px 66px #000, 72px 66px #3fbfff, 75px 66px #dd2a00, 78px 66px #dd2a00, 81px 66px #dd2a00, 84px 66px #dd2a00, 87px 66px #000, 90px 66px #000, 93px 66px transparent, 3px 69px #000, 6px 69px #000, 9px 69px #000, 12px 69px #dd2a00, 15px 69px #dd2a00, 18px 69px #dd2a00, 21px 69px #dd2a00, 24px 69px #3fbfff, 27px 69px #000, 30px 69px #000, 33px 69px #dd2a00, 36px 69px #3fbfff, 39px 69px #3fbfff, 42px 69px #3fbfff, 45px 69px #3fbfff, 48px 69px #3fbfff, 51px 69px #3fbfff, 54px 69px #3fbfff, 57px 69px #3fbfff, 60px 69px #3fbfff, 63px 69px #dd2a00, 66px 69px #000, 69px 69px #000, 72px 69px #3fbfff, 75px 69px #dd2a00, 78px 69px #dd2a00, 81px 69px #dd2a00, 84px 69px #dd2a00, 87px 69px #000, 90px 69px #000, 93px 69px #000, 3px 72px #000, 6px 72px #000, 9px 72px #000, 12px 72px #dd2a00, 15px 72px #dd2a00, 18px 72px #dd2a00, 21px 72px #dd2a00, 24px 72px #3fbfff, 27px 72px #000, 30px 72px #000, 33px 72px #dd2a00, 36px 72px #3fbfff, 39px 72px #3fbfff, 42px 72px #3fbfff, 45px 72px #3fbfff, 48px 72px #3fbfff, 51px 72px #3fbfff, 54px 72px #3fbfff, 57px 72px #3fbfff, 60px 72px #3fbfff, 63px 72px #dd2a00, 66px 72px #000, 69px 72px #000, 72px 72px #3fbfff, 75px 72px #dd2a00, 78px 72px #dd2a00, 81px 72px #dd2a00, 84px 72px #dd2a00, 87px 72px #000, 90px 72px #000, 93px 72px #000, 3px 75px #000, 6px 75px #000, 9px 75px #000, 12px 75px #3fbfff, 15px 75px #3fbfff, 18px 75px #3fbfff, 21px 75px #3fbfff, 24px 75px #3fbfff, 27px 75px #000, 30px 75px #000, 33px 75px #dd2a00, 36px 75px #dd2a00, 39px 75px #dd2a00, 42px 75px #dd2a00, 45px 75px #dd2a00, 48px 75px #dd2a00, 51px 75px #dd2a00, 54px 75px #dd2a00, 57px 75px #dd2a00, 60px 75px #dd2a00, 63px 75px #dd2a00, 66px 75px #000, 69px 75px #000, 72px 75px #3fbfff, 75px 75px #3fbfff, 78px 75px #3fbfff, 81px 75px #3fbfff, 84px 75px #3fbfff, 87px 75px #000, 90px 75px #000, 93px 75px #000, 3px 78px #000, 6px 78px #000, 9px 78px #dd2a00, 12px 78px #000, 15px 78px #000, 18px 78px #000, 21px 78px #000, 24px 78px #000, 27px 78px #000, 30px 78px #000, 33px 78px #000, 36px 78px #000, 39px 78px #000, 42px 78px #000, 45px 78px #000, 48px 78px #000, 51px 78px #000, 54px 78px #000, 57px 78px #000, 60px 78px #000, 63px 78px #000, 66px 78px #000, 69px 78px #000, 72px 78px #000, 75px 78px #000, 78px 78px #000, 81px 78px #000, 84px 78px #000, 87px 78px #dd2a00, 90px 78px #000, 93px 78px #000, 3px 81px #000, 6px 81px #000, 9px 81px #000, 12px 81px #dd2a00, 15px 81px #dd2a00, 18px 81px #dd2a00, 21px 81px #dd2a00, 24px 81px #dd2a00, 27px 81px #dd2a00, 30px 81px #dd2a00, 33px 81px #dd2a00, 36px 81px #dd2a00, 39px 81px #dd2a00, 42px 81px #dd2a00, 45px 81px #dd2a00, 48px 81px #dd2a00, 51px 81px #dd2a00, 54px 81px #dd2a00, 57px 81px #dd2a00, 60px 81px #dd2a00, 63px 81px #dd2a00, 66px 81px #dd2a00, 69px 81px #dd2a00, 72px 81px #dd2a00, 75px 81px #dd2a00, 78px 81px #dd2a00, 81px 81px #dd2a00, 84px 81px #dd2a00, 87px 81px #000, 90px 81px #000, 93px 81px #000, 3px 84px #000, 6px 84px #000, 9px 84px #000, 12px 84px #000, 15px 84px #000, 18px 84px #000, 21px 84px #000, 24px 84px #000, 27px 84px #000, 30px 84px #000, 33px 84px #000, 36px 84px #000, 39px 84px #000, 42px 84px #000, 45px 84px #000, 48px 84px #000, 51px 84px #000, 54px 84px #000, 57px 84px #000, 60px 84px #000, 63px 84px #000, 66px 84px #000, 69px 84px #000, 72px 84px #000, 75px 84px #000, 78px 84px #000, 81px 84px #000, 84px 84px #000, 87px 84px #000, 90px 84px #000, 93px 84px #000, 3px 87px #000, 6px 87px #000, 9px 87px #000, 12px 87px #000, 15px 87px #000, 18px 87px #000, 21px 87px #000, 24px 87px #000, 27px 87px transparent, 30px 87px #3fbfff, 33px 87px #3fbfff, 36px 87px #3fbfff, 39px 87px transparent, 42px 87px transparent, 45px 87px transparent, 48px 87px transparent, 51px 87px transparent, 54px 87px #3fbfff, 57px 87px #3fbfff, 60px 87px #3fbfff, 63px 87px transparent, 66px 87px transparent, 69px 87px #000, 72px 87px #000, 75px 87px #000, 78px 87px #000, 81px 87px #000, 84px 87px #000, 87px 87px #000, 90px 87px #000, 93px 87px #000, 3px 90px transparent, 6px 90px #000, 9px 90px #000, 12px 90px #000, 15px 90px #000, 18px 90px #000, 21px 90px #000, 24px 90px transparent, 27px 90px transparent, 30px 90px #3fbfff, 33px 90px #000, 36px 90px #3fbfff, 39px 90px transparent, 42px 90px transparent, 45px 90px transparent, 48px 90px transparent, 51px 90px transparent, 54px 90px #3fbfff, 57px 90px #000, 60px 90px #3fbfff, 63px 90px transparent, 66px 90px transparent, 69px 90px transparent, 72px 90px #000, 75px 90px #000, 78px 90px #000, 81px 90px #000, 84px 90px #000, 87px 90px #000, 90px 90px #000, 93px 90px transparent;
+  position: absolute;
+  z-index: 10000; }
+
+.road-0 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 90px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-1 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 93px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-2 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 96px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-3 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 99px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-4 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 102px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-5 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 105px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-6 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 108px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-7 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 111px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-8 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 114px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-9 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 117px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-10 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 120px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-11 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 123px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-12 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 126px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-13 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 129px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-14 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 132px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-15 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 135px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-16 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 138px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-17 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 141px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-18 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 144px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-19 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 147px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-20 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 150px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-21 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 153px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-22 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 156px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-23 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 159px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-24 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 162px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-25 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 165px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-26 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 168px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-27 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 171px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-28 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 174px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-29 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 177px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-30 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 180px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-31 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 183px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-32 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 186px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-33 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 189px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-34 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 192px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-35 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 195px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-36 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 198px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-37 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 201px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-38 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 204px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-39 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 207px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-40 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 210px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-41 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 213px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-42 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 216px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-43 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 219px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-44 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 222px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-45 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 225px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-46 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 228px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-47 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 231px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-48 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 234px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-49 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 237px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-50 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 240px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-51 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 243px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-52 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 246px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-53 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 249px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-54 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 252px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-55 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 255px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-56 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 258px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-57 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 261px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-58 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 264px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-59 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 267px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-60 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 270px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-61 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 273px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-62 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 276px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-63 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 279px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-64 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 282px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-65 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 285px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-66 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 288px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-67 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 291px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-68 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 294px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-69 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 297px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-70 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 300px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-71 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 303px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-72 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 306px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-73 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 309px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-74 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 312px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-75 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 315px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-76 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 318px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-77 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 321px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-78 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 324px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-79 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 327px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-80 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 330px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-81 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 333px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-82 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 336px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-83 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 339px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-84 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 342px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-85 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 345px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-86 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 348px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-87 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 351px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-88 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 354px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-89 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 357px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-90 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 360px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-91 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 363px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-92 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 366px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-93 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 369px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-94 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 372px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-95 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 375px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-96 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 378px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-97 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 381px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-98 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 384px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-99 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 387px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.road-100 {
+  top: 51px;
+  position: relative;
+  z-index: 998;
+  height: 3px;
+  width: 390px;
+  background-color: #1b3f5f;
+  margin: auto; }
+
+.grassline1-0 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 99px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-1 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 102.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-2 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 106.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-3 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 110.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-4 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 114px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-5 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 117.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-6 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 121.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-7 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 125.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-8 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 129px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-9 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 132.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-10 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 136.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-11 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 140.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-12 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 144px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-13 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 147.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-14 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 151.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-15 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 155.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-16 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 159px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-17 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 162.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-18 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 166.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-19 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 170.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-20 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 174px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-21 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 177.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-22 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 181.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-23 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 185.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-24 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 189px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-25 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 192.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-26 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 196.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-27 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 200.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-28 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 204px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-29 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 207.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-30 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 211.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-31 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 215.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-32 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 219px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-33 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 222.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-34 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 226.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-35 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 230.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-36 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 234px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-37 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 237.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-38 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 241.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-39 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 245.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-40 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 249px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-41 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 252.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-42 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 256.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-43 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 260.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-44 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 264px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-45 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 267.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-46 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 271.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-47 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 275.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-48 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 279px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-49 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 282.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-50 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 286.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-51 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 290.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-52 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 294px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-53 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 297.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-54 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 301.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-55 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 305.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-56 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 309px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-57 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 312.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-58 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 316.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-59 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 320.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-60 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 324px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-61 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 327.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-62 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 331.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-63 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 335.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-64 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 339px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-65 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 342.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-66 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 346.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-67 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 350.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-68 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 354px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-69 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 357.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-70 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 361.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-71 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 365.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-72 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 369px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-73 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 372.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-74 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 376.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-75 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 380.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-76 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 384px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-77 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 387.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-78 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 391.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-79 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 395.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-80 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 399px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-81 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 402.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-82 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 406.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-83 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 410.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-84 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 414px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-85 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 417.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-86 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 421.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-87 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 425.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-88 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 429px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-89 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 432.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-90 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 436.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-91 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 440.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-92 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 444px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-93 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 447.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-94 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 451.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-95 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 455.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-96 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 459px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-97 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 462.75px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-98 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 466.5px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-99 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 470.25px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+.grassline1-100 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 474px;
+  background-color: #00ab00;
+  margin: auto;
+  -webkit-animation: grassline-change-1 0.125s infinite;
+          animation: grassline-change-1 0.125s infinite; }
+
+@-webkit-keyframes grassline-change-1 {
+  0% {
+    background-color: #4fdf4a; }
+  50% {
+    background-color: #4fdf4a; } }
+
+@keyframes grassline-change-1 {
+  0% {
+    background-color: #4fdf4a; }
+  50% {
+    background-color: #4fdf4a; } }
+.grassline2-0 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 99px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-1 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 102.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-2 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 106.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-3 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 110.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-4 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 114px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-5 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 117.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-6 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 121.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-7 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 125.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-8 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 129px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-9 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 132.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-10 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 136.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-11 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 140.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-12 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 144px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-13 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 147.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-14 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 151.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-15 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 155.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-16 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 159px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-17 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 162.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-18 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 166.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-19 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 170.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-20 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 174px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-21 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 177.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-22 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 181.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-23 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 185.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-24 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 189px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-25 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 192.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-26 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 196.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-27 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 200.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-28 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 204px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-29 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 207.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-30 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 211.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-31 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 215.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-32 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 219px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-33 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 222.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-34 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 226.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-35 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 230.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-36 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 234px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-37 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 237.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-38 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 241.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-39 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 245.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-40 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 249px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-41 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 252.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-42 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 256.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-43 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 260.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-44 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 264px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-45 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 267.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-46 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 271.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-47 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 275.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-48 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 279px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-49 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 282.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-50 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 286.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-51 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 290.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-52 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 294px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-53 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 297.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-54 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 301.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-55 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 305.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-56 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 309px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-57 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 312.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-58 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 316.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-59 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 320.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-60 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 324px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-61 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 327.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-62 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 331.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-63 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 335.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-64 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 339px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-65 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 342.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-66 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 346.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-67 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 350.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-68 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 354px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-69 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 357.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-70 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 361.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-71 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 365.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-72 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 369px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-73 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 372.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-74 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 376.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-75 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 380.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-76 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 384px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-77 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 387.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-78 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 391.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-79 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 395.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-80 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 399px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-81 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 402.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-82 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 406.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-83 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 410.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-84 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 414px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-85 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 417.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-86 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 421.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-87 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 425.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-88 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 429px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-89 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 432.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-90 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 436.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-91 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 440.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-92 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 444px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-93 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 447.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-94 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 451.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-95 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 455.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-96 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 459px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-97 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 462.75px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-98 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 466.5px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-99 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 470.25px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+.grassline2-100 {
+  top: 99px;
+  position: relative;
+  z-index: 997;
+  height: 3px;
+  width: 474px;
+  background-color: #4fdf4a;
+  margin: auto;
+  -webkit-animation: grassline-change-2 0.125s infinite;
+          animation: grassline-change-2 0.125s infinite; }
+
+@-webkit-keyframes grassline-change-2 {
+  0% {
+    background-color: #00ab00; }
+  50% {
+    background-color: #00ab00; } }
+
+@keyframes grassline-change-2 {
+  0% {
+    background-color: #00ab00; }
+  50% {
+    background-color: #00ab00; } }
+.line1-0 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 0px 0px #fff, 0px 0px #fff, 3px 0px #fff, 3px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-1 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 1px 0px #fff, -1px 0px #fff, 4px 0px #fff, 2px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-2 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 2px 0px #fff, -2px 0px #fff, 5px 0px #fff, 1px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-3 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 3px 0px #fff, -3px 0px #fff, 6px 0px #fff, 0px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-4 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 4px 0px #fff, -4px 0px #fff, 7px 0px #fff, -1px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-5 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 5px 0px #fff, -5px 0px #fff, 8px 0px #fff, -2px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-6 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 6px 0px #fff, -6px 0px #fff, 9px 0px #fff, -3px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-7 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 7px 0px #fff, -7px 0px #fff, 10px 0px #fff, -4px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-8 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 8px 0px #fff, -8px 0px #fff, 11px 0px #fff, -5px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-9 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 9px 0px #fff, -9px 0px #fff, 12px 0px #fff, -6px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-10 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 10px 0px #fff, -10px 0px #fff, 13px 0px #fff, -7px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-11 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 11px 0px #fff, -11px 0px #fff, 14px 0px #fff, -8px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-12 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 12px 0px #fff, -12px 0px #fff, 15px 0px #fff, -9px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-13 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 13px 0px #fff, -13px 0px #fff, 16px 0px #fff, -10px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-14 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 14px 0px #fff, -14px 0px #fff, 17px 0px #fff, -11px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-15 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 15px 0px #fff, -15px 0px #fff, 18px 0px #fff, -12px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-16 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 16px 0px #fff, -16px 0px #fff, 19px 0px #fff, -13px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-17 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 17px 0px #fff, -17px 0px #fff, 20px 0px #fff, -14px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-18 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 18px 0px #fff, -18px 0px #fff, 21px 0px #fff, -15px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-19 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 19px 0px #fff, -19px 0px #fff, 22px 0px #fff, -16px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-20 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 20px 0px #fff, -20px 0px #fff, 23px 0px #fff, -17px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-21 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 21px 0px #fff, -21px 0px #fff, 24px 0px #fff, -18px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-22 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 22px 0px #fff, -22px 0px #fff, 25px 0px #fff, -19px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-23 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 23px 0px #fff, -23px 0px #fff, 26px 0px #fff, -20px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-24 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 24px 0px #fff, -24px 0px #fff, 27px 0px #fff, -21px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-25 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 25px 0px #fff, -25px 0px #fff, 28px 0px #fff, -22px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-26 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 26px 0px #fff, -26px 0px #fff, 29px 0px #fff, -23px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-27 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 27px 0px #fff, -27px 0px #fff, 30px 0px #fff, -24px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-28 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 28px 0px #fff, -28px 0px #fff, 31px 0px #fff, -25px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-29 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 29px 0px #fff, -29px 0px #fff, 32px 0px #fff, -26px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-30 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 30px 0px #fff, -30px 0px #fff, 33px 0px #fff, -27px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-31 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 31px 0px #fff, -31px 0px #fff, 34px 0px #fff, -28px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-32 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 32px 0px #fff, -32px 0px #fff, 35px 0px #fff, -29px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-33 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 33px 0px #fff, -33px 0px #fff, 36px 0px #fff, -30px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-34 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 34px 0px #fff, -34px 0px #fff, 37px 0px #fff, -31px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-35 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 35px 0px #fff, -35px 0px #fff, 38px 0px #fff, -32px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-36 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 36px 0px #fff, -36px 0px #fff, 39px 0px #fff, -33px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-37 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 37px 0px #fff, -37px 0px #fff, 40px 0px #fff, -34px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-38 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 38px 0px #fff, -38px 0px #fff, 41px 0px #fff, -35px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-39 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 39px 0px #fff, -39px 0px #fff, 42px 0px #fff, -36px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-40 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 40px 0px #fff, -40px 0px #fff, 43px 0px #fff, -37px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-41 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 41px 0px #fff, -41px 0px #fff, 44px 0px #fff, -38px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-42 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 42px 0px #fff, -42px 0px #fff, 45px 0px #fff, -39px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-43 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 43px 0px #fff, -43px 0px #fff, 46px 0px #fff, -40px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-44 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 44px 0px #fff, -44px 0px #fff, 47px 0px #fff, -41px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-45 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 45px 0px #fff, -45px 0px #fff, 48px 0px #fff, -42px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-46 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 46px 0px #fff, -46px 0px #fff, 49px 0px #fff, -43px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-47 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 47px 0px #fff, -47px 0px #fff, 50px 0px #fff, -44px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-48 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 48px 0px #fff, -48px 0px #fff, 51px 0px #fff, -45px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-49 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 49px 0px #fff, -49px 0px #fff, 52px 0px #fff, -46px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-50 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 50px 0px #fff, -50px 0px #fff, 53px 0px #fff, -47px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-51 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 51px 0px #fff, -51px 0px #fff, 54px 0px #fff, -48px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-52 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 52px 0px #fff, -52px 0px #fff, 55px 0px #fff, -49px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-53 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 53px 0px #fff, -53px 0px #fff, 56px 0px #fff, -50px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-54 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 54px 0px #fff, -54px 0px #fff, 57px 0px #fff, -51px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-55 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 55px 0px #fff, -55px 0px #fff, 58px 0px #fff, -52px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-56 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 56px 0px #fff, -56px 0px #fff, 59px 0px #fff, -53px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-57 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 57px 0px #fff, -57px 0px #fff, 60px 0px #fff, -54px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-58 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 58px 0px #fff, -58px 0px #fff, 61px 0px #fff, -55px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-59 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 59px 0px #fff, -59px 0px #fff, 62px 0px #fff, -56px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-60 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 60px 0px #fff, -60px 0px #fff, 63px 0px #fff, -57px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-61 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 61px 0px #fff, -61px 0px #fff, 64px 0px #fff, -58px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-62 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 62px 0px #fff, -62px 0px #fff, 65px 0px #fff, -59px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-63 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 63px 0px #fff, -63px 0px #fff, 66px 0px #fff, -60px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-64 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 64px 0px #fff, -64px 0px #fff, 67px 0px #fff, -61px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-65 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 65px 0px #fff, -65px 0px #fff, 68px 0px #fff, -62px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-66 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 66px 0px #fff, -66px 0px #fff, 69px 0px #fff, -63px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-67 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 67px 0px #fff, -67px 0px #fff, 70px 0px #fff, -64px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-68 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 68px 0px #fff, -68px 0px #fff, 71px 0px #fff, -65px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-69 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 69px 0px #fff, -69px 0px #fff, 72px 0px #fff, -66px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line1-70 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 70px 0px #fff, -70px 0px #fff, 73px 0px #fff, -67px 0px #fff;
+  -webkit-animation: drive1 0.125s infinite;
+          animation: drive1 0.125s infinite; }
+
+.line2-10 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 10px 0px #fff, -10px 0px #fff, 13px 0px #fff, -7px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-11 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 11px 0px #fff, -11px 0px #fff, 14px 0px #fff, -8px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-12 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 12px 0px #fff, -12px 0px #fff, 15px 0px #fff, -9px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-13 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 13px 0px #fff, -13px 0px #fff, 16px 0px #fff, -10px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-14 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 14px 0px #fff, -14px 0px #fff, 17px 0px #fff, -11px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-15 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 15px 0px #fff, -15px 0px #fff, 18px 0px #fff, -12px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-16 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 16px 0px #fff, -16px 0px #fff, 19px 0px #fff, -13px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-17 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 17px 0px #fff, -17px 0px #fff, 20px 0px #fff, -14px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-18 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 18px 0px #fff, -18px 0px #fff, 21px 0px #fff, -15px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-19 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 19px 0px #fff, -19px 0px #fff, 22px 0px #fff, -16px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-20 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 20px 0px #fff, -20px 0px #fff, 23px 0px #fff, -17px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-21 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 21px 0px #fff, -21px 0px #fff, 24px 0px #fff, -18px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-22 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 22px 0px #fff, -22px 0px #fff, 25px 0px #fff, -19px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-23 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 23px 0px #fff, -23px 0px #fff, 26px 0px #fff, -20px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-24 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 24px 0px #fff, -24px 0px #fff, 27px 0px #fff, -21px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-25 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 25px 0px #fff, -25px 0px #fff, 28px 0px #fff, -22px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-26 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 26px 0px #fff, -26px 0px #fff, 29px 0px #fff, -23px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-27 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 27px 0px #fff, -27px 0px #fff, 30px 0px #fff, -24px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-28 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 28px 0px #fff, -28px 0px #fff, 31px 0px #fff, -25px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-29 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 29px 0px #fff, -29px 0px #fff, 32px 0px #fff, -26px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-30 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 30px 0px #fff, -30px 0px #fff, 33px 0px #fff, -27px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-31 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 31px 0px #fff, -31px 0px #fff, 34px 0px #fff, -28px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-32 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 32px 0px #fff, -32px 0px #fff, 35px 0px #fff, -29px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-33 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 33px 0px #fff, -33px 0px #fff, 36px 0px #fff, -30px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-34 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 34px 0px #fff, -34px 0px #fff, 37px 0px #fff, -31px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-35 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 35px 0px #fff, -35px 0px #fff, 38px 0px #fff, -32px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-36 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 36px 0px #fff, -36px 0px #fff, 39px 0px #fff, -33px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-37 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 37px 0px #fff, -37px 0px #fff, 40px 0px #fff, -34px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-38 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 38px 0px #fff, -38px 0px #fff, 41px 0px #fff, -35px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-39 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 39px 0px #fff, -39px 0px #fff, 42px 0px #fff, -36px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-40 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 40px 0px #fff, -40px 0px #fff, 43px 0px #fff, -37px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-41 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 41px 0px #fff, -41px 0px #fff, 44px 0px #fff, -38px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-42 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 42px 0px #fff, -42px 0px #fff, 45px 0px #fff, -39px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-43 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 43px 0px #fff, -43px 0px #fff, 46px 0px #fff, -40px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-44 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 44px 0px #fff, -44px 0px #fff, 47px 0px #fff, -41px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-45 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 45px 0px #fff, -45px 0px #fff, 48px 0px #fff, -42px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-46 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 46px 0px #fff, -46px 0px #fff, 49px 0px #fff, -43px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-47 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 47px 0px #fff, -47px 0px #fff, 50px 0px #fff, -44px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-48 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 48px 0px #fff, -48px 0px #fff, 51px 0px #fff, -45px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-49 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 49px 0px #fff, -49px 0px #fff, 52px 0px #fff, -46px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-50 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 50px 0px #fff, -50px 0px #fff, 53px 0px #fff, -47px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-51 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 51px 0px #fff, -51px 0px #fff, 54px 0px #fff, -48px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-52 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 52px 0px #fff, -52px 0px #fff, 55px 0px #fff, -49px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-53 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 53px 0px #fff, -53px 0px #fff, 56px 0px #fff, -50px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-54 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 54px 0px #fff, -54px 0px #fff, 57px 0px #fff, -51px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-55 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 55px 0px #fff, -55px 0px #fff, 58px 0px #fff, -52px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-56 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 56px 0px #fff, -56px 0px #fff, 59px 0px #fff, -53px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-57 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 57px 0px #fff, -57px 0px #fff, 60px 0px #fff, -54px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-58 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 58px 0px #fff, -58px 0px #fff, 61px 0px #fff, -55px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-59 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 59px 0px #fff, -59px 0px #fff, 62px 0px #fff, -56px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-60 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 60px 0px #fff, -60px 0px #fff, 63px 0px #fff, -57px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-61 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 61px 0px #fff, -61px 0px #fff, 64px 0px #fff, -58px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-62 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 62px 0px #fff, -62px 0px #fff, 65px 0px #fff, -59px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-63 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 63px 0px #fff, -63px 0px #fff, 66px 0px #fff, -60px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-64 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 64px 0px #fff, -64px 0px #fff, 67px 0px #fff, -61px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-65 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 65px 0px #fff, -65px 0px #fff, 68px 0px #fff, -62px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-66 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 66px 0px #fff, -66px 0px #fff, 69px 0px #fff, -63px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-67 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 67px 0px #fff, -67px 0px #fff, 70px 0px #fff, -64px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-68 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 68px 0px #fff, -68px 0px #fff, 71px 0px #fff, -65px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-69 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 69px 0px #fff, -69px 0px #fff, 72px 0px #fff, -66px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+.line2-70 {
+  position: absolute;
+  left: 48.5%;
+  z-index: 999;
+  height: 3px;
+  width: 3px;
+  box-shadow: 70px 0px #fff, -70px 0px #fff, 73px 0px #fff, -67px 0px #fff;
+  -webkit-animation: drive2 0.125s infinite;
+          animation: drive2 0.125s infinite; }
+
+@-webkit-keyframes drive1 {
+  0% {
+    display: none;
+    visibility: hidden; }
+  50% {
+    display: none;
+    visibility: hidden; } }
+
+@keyframes drive1 {
+  0% {
+    display: none;
+    visibility: hidden; }
+  50% {
+    display: none;
+    visibility: hidden; } }
+@-webkit-keyframes drive2 {
+  50% {
+    display: none;
+    visibility: hidden; }
+  100% {
+    display: none;
+    visibility: hidden; } }
+@keyframes drive2 {
+  50% {
+    display: none;
+    visibility: hidden; }
+  100% {
+    display: none;
+    visibility: hidden; } }
+.row {
+  width: 100%;
+  margin: auto; }
+
+.backgroundrow {
+  position: absolute;
+  float: left;
+  top: 54px;
+  width: 100%; }
+  .backgroundrow .mountains:nth-child(1) {
+    left: -3px; }
+  .backgroundrow .mountains:nth-child(2) {
+    left: 96px; }
+  .backgroundrow .mountains:nth-child(3) {
+    left: 195px; }
+  .backgroundrow .mountains:nth-child(4) {
+    left: 294px; }
+  .backgroundrow .mountains:nth-child(5) {
+    left: 393px; }
+  .backgroundrow .mountains:nth-child(6) {
+    left: 492px; }
+  .backgroundrow .mountains:nth-child(7) {
+    left: 591px; }
+  .backgroundrow .mountains:nth-child(8) {
+    left: 690px; }
+  .backgroundrow .mountains:nth-child(9) {
+    left: 789px; }
+  .backgroundrow .mountains:nth-child(10) {
+    left: 888px; }
+  .backgroundrow .mountains:nth-child(11) {
+    left: 987px; }
+  .backgroundrow .mountains:nth-child(12) {
+    left: 1086px; }
+  .backgroundrow .mountains:nth-child(13) {
+    left: 1185px; }
+  .backgroundrow .mountains:nth-child(14) {
+    left: 1284px; }
+  .backgroundrow .mountains:nth-child(15) {
+    left: 1383px; }
+  .backgroundrow .mountains:nth-child(16) {
+    left: 1482px; }
+  .backgroundrow .mountains:nth-child(17) {
+    left: 1581px; }
+  .backgroundrow .mountains:nth-child(18) {
+    left: 1680px; }
+  .backgroundrow .mountains:nth-child(19) {
+    left: 1779px; }
+  .backgroundrow .mountains:nth-child(20) {
+    left: 1878px; }
+
+.roadrow {
+  height: 48px;
+  width: 100%;
+  margin: auto; }
+
+.horizon {
+  height: 3px;
+  width: 100%;
+  background-color: #1b3f5f; }
+
+.grass1 {
+  height: 3px;
+  width: 100%;
+  background-color: #4fdf4a;
+  -webkit-animation: grass-change-1 0.125s infinite;
+          animation: grass-change-1 0.125s infinite; }
+
+@-webkit-keyframes grass-change-1 {
+  0% {
+    background-color: #4fdf4a; }
+  50% {
+    background-color: #00ab00; } }
+
+@keyframes grass-change-1 {
+  0% {
+    background-color: #4fdf4a; }
+  50% {
+    background-color: #00ab00; } }
+.grass2 {
+  height: 3px;
+  width: 100%;
+  background-color: #00ab00;
+  -webkit-animation: grass-change-2 0.125s infinite;
+          animation: grass-change-2 0.125s infinite; }
+
+@-webkit-keyframes grass-change-2 {
+  0% {
+    background-color: #00ab00; }
+  50% {
+    background-color: #4fdf4a; } }
+
+@keyframes grass-change-2 {
+  0% {
+    background-color: #00ab00; }
+  50% {
+    background-color: #4fdf4a; } }
+body {
+  background: #c8d7ff;
+  margin: 0; }
+
+.roadblasters {
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
+
+.mountains {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  height: 3px;
+  width: 3px;
+  box-shadow: 0 0 transparent, 3px 3px transparent, 3px 6px transparent, 3px 9px transparent, 3px 12px transparent, 3px 15px transparent, 3px 18px transparent, 3px 21px transparent, 3px 24px transparent, 3px 27px transparent, 3px 30px #005200, 3px 33px #005200, 3px 36px #00ab00, 3px 39px #00ab00, 6px 3px transparent, 6px 6px transparent, 6px 9px transparent, 6px 12px transparent, 6px 15px transparent, 6px 18px transparent, 6px 21px transparent, 6px 24px transparent, 6px 27px transparent, 6px 30px #00ab00, 6px 33px #005200, 6px 36px #005200, 6px 39px #00ab00, 9px 3px transparent, 9px 6px transparent, 9px 9px transparent, 9px 12px transparent, 9px 15px transparent, 9px 18px transparent, 9px 21px transparent, 9px 24px transparent, 9px 27px #00ab00, 9px 30px #00ab00, 9px 33px #005200, 9px 36px #005200, 9px 39px #005200, 12px 3px transparent, 12px 6px transparent, 12px 9px transparent, 12px 12px transparent, 12px 15px transparent, 12px 18px transparent, 12px 21px transparent, 12px 24px #00ab00, 12px 27px #00ab00, 12px 30px #00ab00, 12px 33px #00ab00, 12px 36px #005200, 12px 39px #005200, 15px 3px transparent, 15px 6px transparent, 15px 9px transparent, 15px 12px transparent, 15px 15px transparent, 15px 18px transparent, 15px 21px #00ab00, 15px 24px #00ab00, 15px 27px #00ab00, 15px 30px #00ab00, 15px 33px #00ab00, 15px 36px #005200, 15px 39px #005200, 18px 3px transparent, 18px 6px transparent, 18px 9px transparent, 18px 12px transparent, 18px 15px transparent, 18px 18px transparent, 18px 21px #00ab00, 18px 24px #00ab00, 18px 27px #00ab00, 18px 30px #00ab00, 18px 33px #005200, 18px 36px #005200, 18px 39px #005200, 21px 3px transparent, 21px 6px transparent, 21px 9px transparent, 21px 12px transparent, 21px 15px transparent, 21px 18px #00ab00, 21px 21px #00ab00, 21px 24px #00ab00, 21px 27px #00ab00, 21px 30px #00ab00, 21px 33px #00ab00, 21px 36px #00ab00, 21px 39px #005200, 24px 3px transparent, 24px 6px transparent, 24px 9px transparent, 24px 12px transparent, 24px 15px transparent, 24px 18px #00ab00, 24px 21px #00ab00, 24px 24px #005200, 24px 27px #00ab00, 24px 30px #00ab00, 24px 33px #00ab00, 24px 36px #005200, 24px 39px #005200, 27px 3px transparent, 27px 6px transparent, 27px 9px transparent, 27px 12px transparent, 27px 15px #00ab00, 27px 18px #00ab00, 27px 21px #00ab00, 27px 24px #00ab00, 27px 27px #00ab00, 27px 30px #00ab00, 27px 33px #005200, 27px 36px #005200, 27px 39px #00ab00, 30px 3px transparent, 30px 6px transparent, 30px 9px transparent, 30px 12px transparent, 30px 15px #00ab00, 30px 18px #005200, 30px 21px #00ab00, 30px 24px #00ab00, 30px 27px #00ab00, 30px 30px #005200, 30px 33px #005200, 30px 36px #005200, 30px 39px #005200, 33px 3px transparent, 33px 6px transparent, 33px 9px transparent, 33px 12px #00ab00, 33px 15px #00ab00, 33px 18px #00ab00, 33px 21px #00ab00, 33px 24px #00ab00, 33px 27px #005200, 33px 30px #005200, 33px 33px #005200, 33px 36px #00ab00, 33px 39px #00ab00, 36px 3px transparent, 36px 6px transparent, 36px 9px transparent, 36px 12px #00ab00, 36px 15px #00ab00, 36px 18px #00ab00, 36px 21px #00ab00, 36px 24px #005200, 36px 27px #005200, 36px 30px #005200, 36px 33px #005200, 36px 36px #005200, 36px 39px #00ab00, 39px 3px transparent, 39px 6px transparent, 39px 9px #00ab00, 39px 12px #00ab00, 39px 15px #005200, 39px 18px #005200, 39px 21px #005200, 39px 24px #005200, 39px 27px #005200, 39px 30px #005200, 39px 33px #005200, 39px 36px #00ab00, 39px 39px #00ab00, 42px 3px transparent, 42px 6px transparent, 42px 9px #00ab00, 42px 12px #00ab00, 42px 15px #005200, 42px 18px #00ab00, 42px 21px #005200, 42px 24px #005200, 42px 27px #005200, 42px 30px #005200, 42px 33px #005200, 42px 36px #00ab00, 42px 39px #00ab00, 45px 3px transparent, 45px 6px #005200, 45px 9px #00ab00, 45px 12px #005200, 45px 15px #005200, 45px 18px #005200, 45px 21px #005200, 45px 24px #005200, 45px 27px #005200, 45px 30px #005200, 45px 33px #005200, 45px 36px #00ab00, 45px 39px #00ab00, 48px 3px transparent, 48px 6px #00ab00, 48px 9px #005200, 48px 12px #005200, 48px 15px #005200, 48px 18px #005200, 48px 21px #005200, 48px 24px #005200, 48px 27px #005200, 48px 30px #005200, 48px 33px #005200, 48px 36px #00ab00, 48px 39px #005200, 51px 3px #00ab00, 51px 6px #005200, 51px 9px #005200, 51px 12px #005200, 51px 15px #005200, 51px 18px #005200, 51px 21px #005200, 51px 24px #005200, 51px 27px #005200, 51px 30px #005200, 51px 33px #005200, 51px 36px #005200, 51px 39px #00ab00, 54px 3px #005200, 54px 6px #005200, 54px 9px #005200, 54px 12px #005200, 54px 15px #005200, 54px 18px #005200, 54px 21px #005200, 54px 24px #005200, 54px 27px #005200, 54px 30px #005200, 54px 33px #005200, 54px 36px #005200, 54px 39px #00ab00, 57px 3px transparent, 57px 6px #005200, 57px 9px #005200, 57px 12px #005200, 57px 15px #005200, 57px 18px #005200, 57px 21px #005200, 57px 24px #005200, 57px 27px #005200, 57px 30px #005200, 57px 33px #005200, 57px 36px #005200, 57px 39px #005200, 60px 3px transparent, 60px 6px #005200, 60px 9px #005200, 60px 12px #005200, 60px 15px #005200, 60px 18px #005200, 60px 21px #005200, 60px 24px #005200, 60px 27px #005200, 60px 30px #005200, 60px 33px #005200, 60px 36px #005200, 60px 39px #005200, 63px 3px transparent, 63px 6px transparent, 63px 9px transparent, 63px 12px #005200, 63px 15px #005200, 63px 18px #005200, 63px 21px #005200, 63px 24px #005200, 63px 27px #005200, 63px 30px #005200, 63px 33px #005200, 63px 36px #005200, 63px 39px #005200, 66px 3px transparent, 66px 6px transparent, 66px 9px transparent, 66px 12px #005200, 66px 15px #005200, 66px 18px #005200, 66px 21px #005200, 66px 24px #005200, 66px 27px #005200, 66px 30px #005200, 66px 33px #005200, 66px 36px #005200, 66px 39px #005200, 69px 3px transparent, 69px 6px transparent, 69px 9px transparent, 69px 12px transparent, 69px 15px #005200, 69px 18px #005200, 69px 21px #005200, 69px 24px #005200, 69px 27px #005200, 69px 30px #005200, 69px 33px #005200, 69px 36px #005200, 69px 39px #005200, 72px 3px transparent, 72px 6px transparent, 72px 9px transparent, 72px 12px transparent, 72px 15px #005200, 72px 18px #005200, 72px 21px #005200, 72px 24px #005200, 72px 27px #005200, 72px 30px #005200, 72px 33px #005200, 72px 36px #005200, 72px 39px #005200, 75px 3px transparent, 75px 6px transparent, 75px 9px transparent, 75px 12px transparent, 75px 15px transparent, 75px 18px #005200, 75px 21px #005200, 75px 24px #005200, 75px 27px #005200, 75px 30px #005200, 75px 33px #005200, 75px 36px #005200, 75px 39px #005200, 78px 3px transparent, 78px 6px transparent, 78px 9px transparent, 78px 12px transparent, 78px 15px transparent, 78px 18px #005200, 78px 21px #005200, 78px 24px #005200, 78px 27px #005200, 78px 30px #005200, 78px 33px #005200, 78px 36px #005200, 78px 39px #005200, 81px 3px transparent, 81px 6px transparent, 81px 9px transparent, 81px 12px transparent, 81px 15px transparent, 81px 18px transparent, 81px 21px #005200, 81px 24px #005200, 81px 27px #005200, 81px 30px #005200, 81px 33px #005200, 81px 36px #005200, 81px 39px #005200, 84px 3px transparent, 84px 6px transparent, 84px 9px transparent, 84px 12px transparent, 84px 15px transparent, 84px 18px transparent, 84px 21px #005200, 84px 24px #005200, 84px 27px #005200, 84px 30px #005200, 84px 33px #005200, 84px 36px #005200, 84px 39px #00ab00, 87px 3px transparent, 87px 6px transparent, 87px 9px transparent, 87px 12px transparent, 87px 15px transparent, 87px 18px transparent, 87px 21px #005200, 87px 24px #005200, 87px 27px #005200, 87px 30px #005200, 87px 33px #005200, 87px 36px #005200, 87px 39px #00ab00, 90px 3px transparent, 90px 6px transparent, 90px 9px transparent, 90px 12px transparent, 90px 15px transparent, 90px 18px transparent, 90px 21px transparent, 90px 24px #005200, 90px 27px #005200, 90px 30px #005200, 90px 33px #005200, 90px 36px #00ab00, 90px 39px #00ab00, 93px 3px transparent, 93px 6px transparent, 93px 9px transparent, 93px 12px transparent, 93px 15px transparent, 93px 18px transparent, 93px 21px transparent, 93px 24px #005200, 93px 27px #005200, 93px 30px #005200, 93px 33px #005200, 93px 36px #00ab00, 93px 39px #00ab00, 96px 3px transparent, 96px 6px transparent, 96px 9px transparent, 96px 12px transparent, 96px 15px transparent, 96px 18px transparent, 96px 21px transparent, 96px 24px transparent, 96px 27px #005200, 96px 30px #00ab00, 96px 33px #00ab00, 96px 36px #00ab00, 96px 39px #00ab00, 99px 3px transparent, 99px 6px transparent, 99px 9px transparent, 99px 12px transparent, 99px 15px transparent, 99px 18px transparent, 99px 21px transparent, 99px 24px transparent, 99px 27px transparent, 99px 30px #005200, 99px 33px #00ab00, 99px 36px #00ab00, 99px 39px #00ab00; }
 
 * {
   margin: 0;
   padding: 0; }
 
 html, body {
-  background: #fcfcfc;
-  font-family: "Ubuntu", sans-serif;
-  padding: 100px 0; }
-  @media only screen and (max-width: 768px) {
-    html, body {
-      padding: 60px 0; } }
+  background: #c8d7ff;
+  font-family: "VT323"; }
+
+.roadblasters {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: x-large; } }
 
+h1, p {
+  color: white;
+  text-shadow: -2px 2px #3a2c4d; }
+
 a {
   text-decoration: none;
+  text-shadow: none;
   color: #4a68f8; }
 
 a:hover {
   color: #4af8da; }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 99998; }
+
 .main-container {
   width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  z-index: 99999; }
   @media only screen and (max-width: 768px) {
     .main-container {
+      padding-top: 100px;
       width: 80%; } }

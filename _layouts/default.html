@@ -1,38 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
-    <meta name="description" content="Ryan Petersen's personal website.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-
+	<head>
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+		<meta name="description" content="Ryan Petersen's personal website.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
 
 	<body>
-	  <header>
-	  	<div class="logo">
-				<a href="/">Ryan Petersen</a>
-			</div>
-	    <!-- <nav class="nav-header">
-				<ul>
-					<li><a href="/">Resume</a></li>
-				</ul>
-	    </nav> -->
-	  </header>
+		<header>
+			<div class="logo">
+				<a class="github-logo" href="https://github.com/rpetersen29" target="_blank"></a>
+			<span>Ryan Petersen</span>
+		</div>
+		</header>
+		<div class="overlay"></div>
+		{% include roadblasters.html %}
 
 		<div class="main-container">
-
-		  {{ content }}
+			{{ content }}
 
 		</div>
-	  
-	  <footer>
-			<ul>
-				<li><a class="github-logo" href="https://github.com/rpetersen29" target="_blank"></a></li>
-			</ul>
-	  </footer>
 	</body>
 
 </html>

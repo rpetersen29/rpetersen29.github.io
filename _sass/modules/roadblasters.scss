@@ -1,0 +1,274 @@
+$size: 3px; //size of pixels
+$tick: 0.125s;
+@mixin pixelmatic-lr($art, $size: 10px){
+  display: block;
+  height: $size;
+  width: $size;
+  $shadow: 0 0 transparent;
+  @for $y from 1 through length($art){
+    @for $x from 1 through length(nth($art, $y)){
+      $shadow: $shadow
+      + ", " + 
+      ($x * $size)
+      + " " + 
+      ($y * $size) 
+      + " " + 
+      nth(nth($art, $y), $x) ;
+    }
+  }
+  box-shadow: unquote($shadow);
+}
+@mixin pixelmatic-ud($art, $size: 10px){
+  display: block;
+  height: $size;
+  width: $size;
+  $shadow: 0 0 transparent;
+  @for $x from 1 through length($art){
+    @for $y from 1 through length(nth($art, $x)){
+      $shadow: $shadow
+      + ", " + 
+      ($x * $size)
+      + " " + 
+      ($y * $size) 
+      + " " + 
+      nth(nth($art, $x), $y) ;
+    }
+  }
+  box-shadow: unquote($shadow);
+}
+$b0: transparent;
+$b1: #000; //black
+$b2: #fff; //white
+$b3: #dd2a00; //red
+$b4: #3fbfff; //windshield blue
+$b5: #1b3f5f; //road grey
+$b6: #4fdf4a; //light green
+$b7: #00ab00; //dark green & light mountain green
+$b8: #005200; //dark mountain green
+
+$car:
+  $b0 $b0 $b0 $b0 $b0 $b3 $b4 $b3 $b3 $b4 $b4 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b4 $b4 $b3 $b3 $b4 $b3 $b0 $b0 $b0 $b0 $b0,
+  
+  $b0 $b0 $b0 $b0 $b3 $b4 $b4 $b4 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b4 $b4 $b4 $b3 $b0 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b0 $b3 $b3 $b3 $b3 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b3 $b3 $b3 $b3 $b3 $b0 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b0 $b3 $b3 $b3 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b4 $b4 $b4 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b3 $b3 $b3 $b0 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b0 $b3 $b1 $b1 $b3 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b3 $b1 $b1 $b3 $b0 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b0 $b3 $b4 $b4 $b3 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b3 $b4 $b4 $b3 $b0 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b0 $b3 $b4 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b4 $b3 $b0 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b0 $b3 $b4 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b4 $b3 $b0 $b0 $b0 $b0,
+  
+  $b0 $b0 $b0 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b3 $b3 $b4 $b3 $b3 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b3 $b3 $b4 $b3 $b3 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b3 $b4 $b4 $b3 $b1 $b1 $b1 $b1 $b1 $b1 $b4 $b4 $b4 $b4 $b4 $b1 $b1 $b1 $b1 $b1 $b1 $b3 $b4 $b4 $b3 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b3 $b4 $b4 $b3 $b1 $b4 $b4 $b4 $b4 $b1 $b4 $b4 $b1 $b4 $b4 $b1 $b4 $b4 $b4 $b4 $b1 $b3 $b4 $b4 $b3 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b3 $b4 $b4 $b3 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b4 $b4 $b4 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b3 $b4 $b4 $b3 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b3 $b4 $b3 $b3 $b1 $b4 $b4 $b4 $b4 $b1 $b4 $b1 $b1 $b1 $b4 $b1 $b4 $b4 $b4 $b4 $b1 $b3 $b3 $b4 $b3 $b0 $b0 $b0,
+  $b0 $b0 $b0 $b3 $b4 $b3 $b1 $b4 $b4 $b4 $b4 $b4 $b4 $b1 $b4 $b4 $b4 $b1 $b4 $b4 $b4 $b4 $b4 $b4 $b1 $b3 $b4 $b3 $b0 $b0 $b0,
+  
+  $b0 $b0 $b3 $b3 $b4 $b3 $b1 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b1 $b1 $b1 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b1 $b3 $b4 $b3 $b3 $b0 $b0,
+  $b0 $b0 $b4 $b4 $b4 $b4 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b3 $b4 $b3 $b3 $b0 $b0,
+  $b0 $b0 $b3 $b3 $b1 $b1 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b1 $b1 $b3 $b3 $b0 $b0,
+  $b0 $b0 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b0 $b0,
+  $b0 $b0 $b3 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b3 $b0 $b0,
+  $b0 $b0 $b1 $b1 $b3 $b3 $b3 $b4 $b1 $b1 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b1 $b1 $b4 $b3 $b3 $b3 $b1 $b1 $b0 $b0,
+  
+  $b0 $b1 $b1 $b3 $b3 $b3 $b3 $b4 $b1 $b1 $b3 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b3 $b1 $b1 $b4 $b3 $b3 $b3 $b3 $b1 $b1 $b0,
+  $b1 $b1 $b1 $b3 $b3 $b3 $b3 $b4 $b1 $b1 $b3 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b3 $b1 $b1 $b4 $b3 $b3 $b3 $b3 $b1 $b1 $b1,
+  $b1 $b1 $b1 $b3 $b3 $b3 $b3 $b4 $b1 $b1 $b3 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b4 $b3 $b1 $b1 $b4 $b3 $b3 $b3 $b3 $b1 $b1 $b1,
+  $b1 $b1 $b1 $b4 $b4 $b4 $b4 $b4 $b1 $b1 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b1 $b1 $b4 $b4 $b4 $b4 $b4 $b1 $b1 $b1,
+  $b1 $b1 $b3 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b3 $b1 $b1,
+  $b1 $b1 $b1 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b3 $b1 $b1 $b1,
+  $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1,
+  $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b0 $b4 $b4 $b4 $b0 $b0 $b0 $b0 $b0 $b4 $b4 $b4 $b0 $b0 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b1,
+  $b0 $b1 $b1 $b1 $b1 $b1 $b1 $b0 $b0 $b4 $b1 $b4 $b0 $b0 $b0 $b0 $b0 $b4 $b1 $b4 $b0 $b0 $b0 $b1 $b1 $b1 $b1 $b1 $b1 $b1 $b0;
+
+$line: $b1;
+$line2: $b1;
+.car {
+  bottom: ($size * 32);
+  left: 46%;
+  @include pixelmatic-lr($car, $size);
+  position: absolute;
+  z-index: 10000;
+}
+
+@for $i from 0 through 100 {
+  .road-#{$i} {
+    top: $size*17;
+    position: relative;
+    z-index: 998;
+    height: $size;
+    width: ($i+30)*$size;
+    background-color: $b5;
+    margin: auto;
+  }
+}
+@for $i from 0 through 100 {
+  .grassline1-#{$i} {
+    top: $size*33;
+    position: relative;
+    z-index: 997;
+    height: $size;
+    width: ($i*1.25+33)*$size;
+    background-color: $b7;
+    margin: auto;
+		animation: grassline-change-1 $tick infinite;
+  }
+}
+@keyframes grassline-change-1 {
+  0% { background-color: $b6;}
+  50% { background-color: $b6;}
+}
+@for $i from 0 through 100 {
+  .grassline2-#{$i} {
+    top: $size*33;
+    position: relative;
+    z-index: 997;
+    height: $size;
+    width: ($i*1.25+33)*$size;
+    background-color: $b6;
+    margin: auto;
+		animation: grassline-change-2 $tick infinite;
+  }
+}
+@keyframes grassline-change-2 {
+  0% { background-color: $b7;}
+  50% { background-color: $b7;}
+}
+@for $i from 0 through 70 {
+	.line1-#{$i}{
+		position: absolute;
+		left: 48.5%;
+		z-index: 999;
+		height: $size;
+		width: $size;
+		box-shadow: 
+			$i+px 0px $b2,
+			($i*-1)+px 0px $b2,
+			$i+$size 0px $b2,
+			($i*-1)+$size 0px $b2;
+		animation: drive1 $tick infinite;
+	}
+}
+@for $i from 10 through 70 {
+	.line2-#{$i}{
+		position: absolute;
+		left: 48.5%;
+		z-index: 999;
+		height: $size;
+		width: $size;
+		box-shadow: 
+			$i+px 0px $b2,
+			($i*-1)+px 0px $b2,
+			$i+$size 0px $b2,
+			($i*-1)+$size 0px $b2;
+		animation: drive2 $tick infinite;
+	}
+}
+
+@keyframes drive1 {
+  0% { display: none; visibility: hidden }
+  50% { display: none; visibility: hidden }
+}
+@keyframes drive2 {
+  50% { display: none; visibility: hidden }
+  100% { display: none; visibility: hidden }
+}
+
+.row {
+  width: 100%;
+  margin: auto;
+}
+.backgroundrow {
+	position: absolute;
+	float: left;
+	top: 18*$size;
+  width: 100%;
+	@for $i from 1 through 20 {
+		.mountains:nth-child(#{$i}){
+			left: ($i - 1)*33*$size - $size;
+		}
+	}
+}
+.roadrow {
+  height: $size * 16;
+  width: 100%;
+  margin: auto;
+}
+.horizon {
+  height: $size;
+  width: 100%;
+  background-color: $b5;
+}
+.grass1 {
+  height: $size;
+  width: 100%;
+  background-color: $b6;
+  animation: grass-change-1 $tick infinite;
+}
+@keyframes grass-change-1 {
+  0% { background-color: $b6;}
+  50% { background-color: $b7;}
+}
+.grass2 {
+  height: $size;
+  width: 100%;
+  background-color: $b7;
+  animation: grass-change-2 $tick infinite;
+}
+@keyframes grass-change-2 {
+  0% { background-color: $b7;}
+  50% { background-color: $b6;}
+}
+
+body {
+  background: #c8d7ff;
+	margin: 0;
+}
+.roadblasters{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+$mountains: $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b8 $b8 $b7 $b7,
+$b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b7 $b8 $b8 $b7,
+$b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b7 $b7 $b8 $b8 $b8,
+$b0 $b0 $b0 $b0 $b0 $b0 $b0 $b7 $b7 $b7 $b7 $b8 $b8,
+$b0 $b0 $b0 $b0 $b0 $b0 $b7 $b7 $b7 $b7 $b7 $b8 $b8,
+$b0 $b0 $b0 $b0 $b0 $b0 $b7 $b7 $b7 $b7 $b8 $b8 $b8,
+$b0 $b0 $b0 $b0 $b0 $b7 $b7 $b7 $b7 $b7 $b7 $b7 $b8,
+$b0 $b0 $b0 $b0 $b0 $b7 $b7 $b8 $b7 $b7 $b7 $b8 $b8,
+$b0 $b0 $b0 $b0 $b7 $b7 $b7 $b7 $b7 $b7 $b8 $b8 $b7,
+$b0 $b0 $b0 $b0 $b7 $b8 $b7 $b7 $b7 $b8 $b8 $b8 $b8,
+$b0 $b0 $b0 $b7 $b7 $b7 $b7 $b7 $b8 $b8 $b8 $b7 $b7,
+$b0 $b0 $b0 $b7 $b7 $b7 $b7 $b8 $b8 $b8 $b8 $b8 $b7,
+$b0 $b0 $b7 $b7 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b7 $b7,
+$b0 $b0 $b7 $b7 $b8 $b7 $b8 $b8 $b8 $b8 $b8 $b7 $b7,
+$b0 $b8 $b7 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b7 $b7,
+$b0 $b7 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b7 $b8,
+$b7 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b7,
+$b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b7,
+$b0 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8,
+$b0 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8,
+$b0 $b0 $b0 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8,
+$b0 $b0 $b0 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8,
+$b0 $b0 $b0 $b0 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8,
+$b0 $b0 $b0 $b0 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8,
+$b0 $b0 $b0 $b0 $b0 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8,
+$b0 $b0 $b0 $b0 $b0 $b8 $b8 $b8 $b8 $b8 $b8 $b8 $b8,
+$b0 $b0 $b0 $b0 $b0 $b0 $b8 $b8 $b8 $b8 $b8 $b8 $b8,
+$b0 $b0 $b0 $b0 $b0 $b0 $b8 $b8 $b8 $b8 $b8 $b8 $b7,
+$b0 $b0 $b0 $b0 $b0 $b0 $b8 $b8 $b8 $b8 $b8 $b8 $b7,
+$b0 $b0 $b0 $b0 $b0 $b0 $b0 $b8 $b8 $b8 $b8 $b7 $b7,
+$b0 $b0 $b0 $b0 $b0 $b0 $b0 $b8 $b8 $b8 $b8 $b7 $b7,
+$b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b8 $b7 $b7 $b7 $b7,
+$b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b8 $b7 $b7 $b7;
+
+.mountains{
+	position: absolute;
+	z-index: 999;
+	@include pixelmatic-ud($mountains, $size);
+}
+
+

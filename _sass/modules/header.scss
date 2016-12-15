@@ -1,16 +1,9 @@
 header{
-	background: rgb(40,40,40);
-	background: url(/images/header-bg.png) repeat left top fixed;
-	font-family: $vt323;
-	position: absolute;
-	top: 0;
-	height: 150px;
+	font-family: $default-font;
+	height: 200px;
 	width: 100%;
-	left: 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.7);
+	z-index: 99999;
+    position: relative;
 	@media #{$mobile} {
       height: 100px;
     }
@@ -19,7 +12,7 @@ header{
 	    text-align: center;
         padding: 25px;
 
-		a{	
+		span{	
 		    font-size: 80px;
 		    text-decoration: none;
 		    color: white;
@@ -34,7 +27,18 @@ header{
 			padding: 10px 20px;
 		}
 	}
-	
+	.github-logo{
+		width:75px;
+		height:75px;
+		display:block;
+		margin: auto;
+			background: transparent url(/images/github-logo.png) center top no-repeat;
+	}
+	.github-logo:hover{
+		width:75px;
+		height:75px;
+		background-image: url(/images/github-logo-hover.png);
+	}
 	.nav-header{
 		width: 50%;
 		
