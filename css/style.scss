@@ -58,6 +58,19 @@ a:hover{
 	z-index: 99999;
 	@media #{$mobile} {
 		padding-top: 100px;
-      width: 80%;
+      	width: 80%;
+    }
+    .profiles{
+    	text-align: center;
+    	padding-bottom: 50px;
+    	span:after{
+			content: " | ";
+    	}
+    	span:last-child:after{
+			content: "";
+    	}
+    	@media #{$mobile} {
+		    padding-bottom: 20px;
+		}
     }
 }
