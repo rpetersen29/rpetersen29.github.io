@@ -30,13 +30,18 @@ h1{
 }
 
 h1, p {
-    text-shadow: -2px 2px #3a2c4d;
+
 }
 h1{
     color: #fad246;
+    text-shadow: -2px 2px #3a2c4d;
 }
 p{
     color: white;
+	text-shadow: -2px 2px #3a2c4d,
+		-2px -2px #3a2c4d,
+	    2px 2px #3a2c4d,
+	    2px -2px #3a2c4d;
 }
 
 a{
