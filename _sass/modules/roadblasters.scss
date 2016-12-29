@@ -1,4 +1,4 @@
-$size: 3px; //size of pixels
+$size: 2px; //size of pixels
 $tick: 0.125s;
 @mixin pixelmatic-lr($art, $size: 10px){
   display: block;
@@ -86,7 +86,7 @@ $line: $b1;
 $line2: $b1;
 .car {
   bottom: ($size * 32);
-  left: 46%;
+  left: 47%;
   @include pixelmatic-lr($car, $size);
   position: absolute;
   z-index: 10000;
@@ -112,7 +112,7 @@ $line2: $b1;
     width: ($i*1.25+33)*$size;
     background-color: $b7;
     margin: auto;
-		animation: grassline-change-1 $tick infinite;
+    animation: grassline-change-1 $tick infinite;
   }
 }
 @keyframes grassline-change-1 {
@@ -128,7 +128,7 @@ $line2: $b1;
     width: ($i*1.25+33)*$size;
     background-color: $b6;
     margin: auto;
-		animation: grassline-change-2 $tick infinite;
+    animation: grassline-change-2 $tick infinite;
   }
 }
 @keyframes grassline-change-2 {
@@ -136,34 +136,34 @@ $line2: $b1;
   50% { background-color: $b7;}
 }
 @for $i from 0 through 70 {
-	.line1-#{$i}{
-		position: absolute;
-		left: 48.5%;
-		z-index: 999;
-		height: $size;
-		width: $size;
-		box-shadow: 
-			$i+px 0px $b2,
-			($i*-1)+px 0px $b2,
-			$i+$size 0px $b2,
-			($i*-1)+$size 0px $b2;
-		animation: drive1 $tick infinite;
-	}
+  .line1-#{$i}{
+    position: absolute;
+    left: 48.5%;
+    z-index: 999;
+    height: $size;
+    width: $size;
+    box-shadow: 
+      $i*0.75+px 0px $b2,
+      ($i*-0.75)+px 0px $b2,
+      $i*0.75+$size 0px $b2,
+      ($i*-0.75)+$size 0px $b2;
+    animation: drive1 $tick infinite;
+  }
 }
 @for $i from 10 through 70 {
-	.line2-#{$i}{
-		position: absolute;
-		left: 48.5%;
-		z-index: 999;
-		height: $size;
-		width: $size;
-		box-shadow: 
-			$i+px 0px $b2,
-			($i*-1)+px 0px $b2,
-			$i+$size 0px $b2,
-			($i*-1)+$size 0px $b2;
-		animation: drive2 $tick infinite;
-	}
+  .line2-#{$i}{
+    position: absolute;
+    left: 48.5%;
+    z-index: 999;
+    height: $size;
+    width: $size;
+    box-shadow: 
+      $i*0.75+px 0px $b2,
+      ($i*-0.75)+px 0px $b2,
+      $i*0.75+$size 0px $b2,
+      ($i*-0.75)+$size 0px $b2;
+    animation: drive2 $tick infinite;
+  }
 }
 
 @keyframes drive1 {
@@ -180,15 +180,15 @@ $line2: $b1;
   margin: auto;
 }
 .backgroundrow {
-	position: absolute;
-	float: left;
-	top: 18*$size;
+  position: absolute;
+  float: left;
+  top: 18*$size;
   width: 100%;
-	@for $i from 1 through 20 {
-		.mountains:nth-child(#{$i}){
-			left: ($i - 1)*33*$size - $size;
-		}
-	}
+  @for $i from 1 through 20 {
+    .mountains:nth-child(#{$i}){
+      left: ($i - 1)*33*$size - $size;
+    }
+  }
 }
 .roadrow {
   height: $size * 16;
@@ -223,12 +223,12 @@ $line2: $b1;
 
 body {
   background: #c8d7ff;
-	margin: 0;
+  margin: 0;
 }
 .roadblasters{
-	position: absolute;
-	width: 100%;
-	bottom: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 $mountains: $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b8 $b8 $b7 $b7,
@@ -266,9 +266,9 @@ $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b8 $b7 $b7 $b7 $b7,
 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b0 $b8 $b7 $b7 $b7;
 
 .mountains{
-	position: absolute;
-	z-index: 999;
-	@include pixelmatic-ud($mountains, $size);
+  position: absolute;
+  z-index: 999;
+  @include pixelmatic-ud($mountains, $size);
 }
 
 

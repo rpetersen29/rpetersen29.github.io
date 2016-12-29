@@ -4,7 +4,6 @@
 @import "modules/variables";
 @import "modules/media_queries";
 @import "modules/header";
-@import "modules/footer";
 @import "modules/roadblasters";
 
 *{
@@ -13,8 +12,8 @@
 }
 
 html, body{
-	background: rgb(200, 215, 255);
 	font-family: $default-font;
+	background-color: $light-gray;
 }
 
 body{
@@ -29,19 +28,12 @@ h1{
 	}
 }
 
-h1, p {
-
-}
 h1{
-    color: #fad246;
+    color: $yellow;
     text-shadow: -2px 2px #3a2c4d;
 }
 p{
-    color: white;
-	text-shadow: -1px 1px #3a2c4d,
-		-1px -1px #3a2c4d,
-	    1px 1px #3a2c4d,
-	    1px -1px #3a2c4d;
+    color: $black;
 }
 
 a{
@@ -52,14 +44,6 @@ a{
 a:hover{
 	color: $mint-green;
 }
-.overlay{
-    position: absolute;
-    top: 0;
-    background-color: rgba(255,255,255,0.5);
-    width: 100%;
-    height: 100%;
-    z-index: 99998;
-}
 
 .main-container{
 	width: 50%;
@@ -67,12 +51,12 @@ a:hover{
 	position: relative;
 	z-index: 99999;
 	@media #{$mobile} {
-		padding-top: 100px;
+		// padding-top: 100px;
       	width: 80%;
     }
     .profiles{
     	text-align: center;
-    	padding-bottom: 50px;
+    	padding-bottom: 20px;
     	span:after{
 			content: " | ";
     	}
