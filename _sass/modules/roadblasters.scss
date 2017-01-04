@@ -135,7 +135,7 @@ $line2: $b1;
   0% { background-color: $b7;}
   50% { background-color: $b7;}
 }
-@for $i from 1 through 93 {
+@for $i from 0 through 100 {
   .line1-#{$i}{
     position: absolute;
     left: 48.5%;
@@ -152,7 +152,7 @@ $line2: $b1;
     animation: drive1 $tick infinite;
   }
 }
-@for $i from 1 through 93 {
+@for $i from 0 through 100 {
   .line2-#{$i}{
     position: absolute;
     left: 48.5%;
