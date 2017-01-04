@@ -98,7 +98,7 @@ $line2: $b1;
     position: relative;
     z-index: 998;
     height: $size;
-    width: ($i+30)*$size;
+    width: ($i*1.5+30)*$size;
     background-color: $b5;
     margin: auto;
   }
@@ -109,7 +109,7 @@ $line2: $b1;
     position: relative;
     z-index: 997;
     height: $size;
-    width: ($i*1.25+33)*$size;
+    width: ($i*1.75+33)*$size;
     background-color: $b7;
     margin: auto;
     animation: grassline-change-1 $tick infinite;
@@ -125,7 +125,7 @@ $line2: $b1;
     position: relative;
     z-index: 997;
     height: $size;
-    width: ($i*1.25+33)*$size;
+    width: ($i*1.75+33)*$size;
     background-color: $b6;
     margin: auto;
     animation: grassline-change-2 $tick infinite;
@@ -135,7 +135,7 @@ $line2: $b1;
   0% { background-color: $b7;}
   50% { background-color: $b7;}
 }
-@for $i from 0 through 70 {
+@for $i from 1 through 93 {
   .line1-#{$i}{
     position: absolute;
     left: 48.5%;
@@ -143,14 +143,16 @@ $line2: $b1;
     height: $size;
     width: $size;
     box-shadow: 
-      $i*0.75+px 0px $b2,
-      ($i*-0.75)+px 0px $b2,
-      $i*0.75+$size 0px $b2,
-      ($i*-0.75)+$size 0px $b2;
+      $i*0.65+$size*2 0px $b2,
+      $i*0.65+$size*3 0px $b2,
+      $i*0.65+$size*4 0px $b2,
+      ($i*-0.65)-$size*2 0px $b2,
+      ($i*-0.65)-$size*3 0px $b2,
+      ($i*-0.65)-$size*4 0px $b2;
     animation: drive1 $tick infinite;
   }
 }
-@for $i from 10 through 70 {
+@for $i from 1 through 93 {
   .line2-#{$i}{
     position: absolute;
     left: 48.5%;
@@ -158,10 +160,12 @@ $line2: $b1;
     height: $size;
     width: $size;
     box-shadow: 
-      $i*0.75+px 0px $b2,
-      ($i*-0.75)+px 0px $b2,
-      $i*0.75+$size 0px $b2,
-      ($i*-0.75)+$size 0px $b2;
+      $i*0.65+$size*2 0px $b2,
+      $i*0.65+$size*3 0px $b2,
+      $i*0.65+$size*4 0px $b2,
+      ($i*-0.65)-$size*2 0px $b2,
+      ($i*-0.65)-$size*3 0px $b2,
+      ($i*-0.65)-$size*4 0px $b2;
     animation: drive2 $tick infinite;
   }
 }
