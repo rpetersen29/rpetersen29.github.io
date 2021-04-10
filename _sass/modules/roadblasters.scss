@@ -86,7 +86,8 @@ $line: $b1;
 $line2: $b1;
 .car {
   bottom: ($size * 32);
-  left: 47%;
+  left: 50%;
+  transform: translate(-36px, 0);
   @include pixelmatic-lr($car, $size);
   position: absolute;
   z-index: 10000;
@@ -227,6 +228,7 @@ $line2: $b1;
 body {
   background: #c8d7ff;
   margin: 0;
+  overflow: hidden;
 }
 .roadblasters{
   position: absolute;
