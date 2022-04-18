@@ -3,9 +3,9 @@
 # Where things are
 source:      .
 destination: ./_site
-plugins_dir:     ./_plugins
-layouts:     ./_layouts
-data_source: ./_data
+plugins_dir: ./_plugins
+layouts_dir: ./_layouts
+data_dir:    ./_data
 collections: null
 
 # Handling Reading
@@ -24,7 +24,7 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems:      ['github-pages', 'octopress-autoprefixer']
+plugins:   ['github-pages', 'octopress-autoprefixer']
 
 # Conversion
 markdown:    kramdown
