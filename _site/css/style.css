@@ -1064,7 +1064,7 @@ header .logo .github-logo:hover { width: 75px; height: 75px; background-image: u
 
 @keyframes grass-change-2 { 0% { background-color: #00ab00; }
   50% { background-color: #4fdf4a; } }
-body { background: #c8d7ff; margin: 0; overflow: hidden; }
+body { background: #c8d7ff; margin: 0; }
 
 .roadblasters { position: absolute; width: 100%; bottom: 0; }
 
