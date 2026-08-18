@@ -1,0 +1,61 @@
+// Theme tokens, driven by [data-theme] on <html> (see js/theme.js).
+// :root holds the Light/Day theme as the default so the page renders
+// correctly even before JS runs.
+
+:root {
+  // RoadBlasters scene — car & road stay constant across every theme.
+  --rb-b1: #000000; // outline
+  --rb-b2: #ffffff; // road lines
+  --rb-b3: #bc4030; // car red
+  --rb-b4: #72b8ff; // windshield blue
+  --rb-b5: #004f5c; // road grey
+
+  // RoadBlasters scene — environment colors, themed below.
+  --rb-b6: #6be740; // light grass
+  --rb-b7: #1d9d02; // dark grass
+  --rb-b8: #1d9d02; // light mountain
+  --rb-b9: #016100; // dark mountain
+  --rb-b10: #d8d7ff; // sky
+
+  // Page chrome
+  --page-bg: #f3f2fb;
+  --page-text: #000000;
+  --heading-color: #fad246;
+  --heading-shadow: #3a2c4d;
+  --link-color: #4a68f8;
+  --link-hover: #4af8da;
+  --header-overlay: rgba(255, 255, 255, 0.5);
+  --header-border: #000000;
+}
+
+[data-theme="dusk"] {
+  --rb-b6: #8fd600;
+  --rb-b7: #458e01;
+  --rb-b8: #049942;
+  --rb-b9: #005e14;
+  --rb-b10: #ebceff;
+
+  --page-bg: #f7ecf7;
+  --page-text: #3a2c4d;
+  --heading-color: #ffb84d;
+  --heading-shadow: #3a2c4d;
+  --link-color: #7b2cbf;
+  --link-hover: #da4af8;
+  --header-overlay: rgba(255, 255, 255, 0.35);
+}
+
+[data-theme="dark"] {
+  --rb-b6: #256ddd;
+  --rb-b7: #003a93;
+  --rb-b8: #a92ad1;
+  --rb-b9: #003a93;
+  --rb-b10: #f477ff;
+
+  --page-bg: #140f26;
+  --page-text: #f0eaff;
+  --heading-color: #fad246;
+  --heading-shadow: #000000;
+  --link-color: #4af8da;
+  --link-hover: #da4af8;
+  --header-overlay: rgba(0, 0, 0, 0.25);
+}

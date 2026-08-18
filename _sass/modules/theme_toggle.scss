@@ -1,0 +1,108 @@
+@import "variables";
+@import "media_queries";
+
+.theme-toggle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1001;
+  display: flex;
+  gap: 6px;
+
+  @media #{$mobile} {
+    top: 8px;
+    right: 8px;
+    gap: 4px;
+  }
+}
+
+.theme-btn {
+  width: 42px;
+  height: 46px;
+  padding: 4px 0 3px;
+  border: 2px solid $black;
+  background-color: var(--rb-b10-swatch);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  box-shadow:
+    inset 2px 2px 0 rgba(255, 255, 255, 0.6),
+    inset -2px -2px 0 rgba(0, 0, 0, 0.35);
+
+  @media #{$mobile} {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    fill: $black;
+    pointer-events: none;
+
+    @media #{$mobile} {
+      width: 60%;
+      height: 60%;
+    }
+  }
+
+  .theme-btn-label {
+    font-family: $default-font;
+    font-size: 11px;
+    line-height: 1;
+    color: $black;
+    pointer-events: none;
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+
+  &:hover {
+    filter: brightness(1.08);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $black;
+    outline-offset: 2px;
+  }
+
+  &[aria-pressed="true"] {
+    box-shadow:
+      inset 2px 2px 0 rgba(0, 0, 0, 0.45),
+      inset -2px -2px 0 rgba(255, 255, 255, 0.3);
+    transform: translateY(1px);
+  }
+
+  &[data-theme="light"] {
+    --rb-b10-swatch: #d8d7ff;
+  }
+  &[data-theme="dusk"] {
+    --rb-b10-swatch: #ebceff;
+  }
+  &[data-theme="dark"] {
+    --rb-b10-swatch: #f477ff;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body,
+  header,
+  a,
+  h1,
+  .logo span,
+  .theme-btn,
+  .roadblasters .road-0,
+  .roadblasters [class^="road-"],
+  .roadblasters [class^="grassline"],
+  .roadblasters .grass1,
+  .roadblasters .grass2 {
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  }
+}
+

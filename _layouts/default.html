@@ -5,6 +5,14 @@
 		<title>{{ page.title }}</title>
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
 		<meta name="theme-color" content="#e4ebff">
+		<script>
+		  (function () {
+		    try {
+		      var theme = localStorage.getItem("theme") || "light";
+		      document.documentElement.setAttribute("data-theme", theme);
+		    } catch (e) {}
+		  })();
+		</script>
 		<link rel="stylesheet" href="css/style.css">
 		<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 		<meta name="description" content="Ryan Petersen's personal website.">
@@ -15,16 +23,18 @@
 		<header>
 			<div class="overlay"></div>
 			{% include roadblasters.html %}
+			{% include theme-toggle.html %}
 			<div class="logo">
 				<a class="github-logo" href="https://github.com/rpetersen29" target="_blank" rel="noopener"></a>
 			<span>Ryan Petersen</span>
 		</div>
 		</header>
-		
+
 		<div class="main-container">
 			{{ content }}
 
 		</div>
+		<script src="js/theme.js"></script>
 	</body>
 
 </html>

@@ -1,10 +1,12 @@
 ---
 ---
 
+@import "modules/themes";
 @import "modules/variables";
 @import "modules/media_queries";
 @import "modules/header";
 @import "modules/roadblasters";
+@import "modules/theme_toggle";
 
 *{
   margin: 0;
@@ -13,7 +15,7 @@
 
 html, body{
 	font-family: $default-font;
-	background-color: $light-gray;
+	background-color: var(--page-bg);
 }
 
 body{
@@ -21,27 +23,26 @@ body{
 }
 
 h1{
+    color: var(--heading-color);
+	margin-top: 10px;
+    text-shadow: 2px 2px 0 var(--heading-shadow), -2px -2px 0 var(--heading-shadow), 2px -2px 0 var(--heading-shadow), -2px 2px 0 var(--heading-shadow);
+
 	@media #{$mobile} {
 	    font-size: x-large;
+	    text-shadow: 1px 1px 0 var(--heading-shadow), -1px -1px 0 var(--heading-shadow), 1px -1px 0 var(--heading-shadow), -1px 1px 0 var(--heading-shadow);
 	}
 }
-
-h1{
-    color: $yellow;
-	margin-top: 10px;
-    text-shadow: 2px 2px 0 #3a2c4d, -2px -2px 0 #3a2c4d, 2px -2px 0 #3a2c4d, -2px 2px 0 #3a2c4d, 2px 2px 0 #3a2c4d;
-}
 p{
-    color: $black;
+    color: var(--page-text);
 }
 
 a{
 	text-decoration:none;
 	text-shadow: none;
-	color: $light-blue;
+	color: var(--link-color);
 }
 a:hover{
-	color: $mint-green;
+	color: var(--link-hover);
 }
 
 .main-container{
