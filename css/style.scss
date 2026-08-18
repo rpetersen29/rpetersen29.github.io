@@ -28,7 +28,8 @@ h1{
 
 h1{
     color: $yellow;
-    text-shadow: -2px 2px #3a2c4d;
+	margin-top: 10px;
+    text-shadow: 2px 2px 0 #3a2c4d, -2px -2px 0 #3a2c4d, 2px -2px 0 #3a2c4d, -2px 2px 0 #3a2c4d, 2px 2px 0 #3a2c4d;
 }
 p{
     color: $black;
