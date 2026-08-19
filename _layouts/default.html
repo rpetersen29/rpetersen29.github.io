@@ -4,12 +4,15 @@
 		<meta charset="utf-8">
 		<title>{{ page.title }}</title>
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
-		<meta name="theme-color" content="#e4ebff">
+		<meta name="theme-color" content="#f3f2fb">
 		<script>
 		  (function () {
+		    window.__THEME_COLORS = { light: "#f3f2fb", dusk: "#e0cde9", dark: "#140f26" };
 		    try {
 		      var theme = localStorage.getItem("theme") || "light";
 		      document.documentElement.setAttribute("data-theme", theme);
+		      var meta = document.querySelector('meta[name="theme-color"]');
+		      if (meta) meta.setAttribute("content", window.__THEME_COLORS[theme] || window.__THEME_COLORS.light);
 		    } catch (e) {}
 		  })();
 		</script>
